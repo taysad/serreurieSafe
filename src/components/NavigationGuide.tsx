@@ -108,7 +108,7 @@ const NavigationGuide: React.FC<NavigationGuideProps> = ({
 
   const handleAction = () => {
     if (currentGuide.actionType === "call") {
-      window.location.href = "tel:+33123456789";
+      window.location.href = "tel:+33185097365";
     } else if (currentGuide.actionPath) {
       window.location.href = currentGuide.actionPath;
     }
@@ -188,7 +188,7 @@ const NavigationGuide: React.FC<NavigationGuideProps> = ({
             <div className="space-y-4">
               {currentGuide.actionType === "call" ? (
                 <MagneticButton
-                  href="tel:+33123456789"
+                  href="tel:+33185097365"
                   className="w-full bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-all duration-200 hover:scale-105 flex items-center justify-center space-x-2"
                 >
                   <Phone className="w-5 h-5" />
@@ -238,9 +238,8 @@ const NavigationGuide: React.FC<NavigationGuideProps> = ({
               >
                 <span className="font-medium">Actions rapides</span>
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform ${
-                    isExpanded ? "rotate-180" : ""
-                  }`}
+                  className={`w-4 h-4 transition-transform ${isExpanded ? "rotate-180" : ""
+                    }`}
                 />
               </button>
 

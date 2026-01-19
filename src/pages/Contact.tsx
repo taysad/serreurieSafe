@@ -1,5 +1,6 @@
 ﻿import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import {
   Phone,
   Mail,
@@ -9,10 +10,10 @@ import {
   MessageCircle,
   Star,
 } from "lucide-react";
-import GlassCard from "../components/GlassCard";
 import { sendEmail } from "../utils/emailService";
 
 const Contact: React.FC = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,7 +41,7 @@ const Contact: React.FC = () => {
       title: "Téléphone",
       details: "01 85 09 73 65",
       subtitle: "Disponible 24h/24 - 7j/7",
-      action: "tel:+330185097365",
+      action: "tel:+33185097365",
       image:
         "eps10-orange-phone-call-or-telephone-abstract-icon-isolated-on-white-background-contact-us-or-hotline-symbol-in-a-simple-flat-trendy-modern-style-for-your-website-design-logo-and-mobile-app-vector.jpg",
     },
@@ -115,17 +116,8 @@ const Contact: React.FC = () => {
       });
       setIsSubmitted(true);
       setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-          serviceType: "",
-          preferredTime: "",
-        });
-      }, 3000);
+        navigate('/thank-you');
+      }, 2000);
     } catch (error) {
       console.error("Erreur Contact:", error);
       alert("Une erreur est survenue lors de l'envoi. Si le problème persiste, vérifiez les clés EmailJS ou contactez-nous par téléphone.");

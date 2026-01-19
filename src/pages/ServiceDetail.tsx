@@ -44,7 +44,7 @@ const ServiceDetail: React.FC = () => {
           description: "Contactez-nous 24h/24 pour une intervention rapide"
         },
         {
-          step: "02", 
+          step: "02",
           title: "Diagnostic",
           description: "Évaluation de la situation et devis transparent"
         },
@@ -61,7 +61,7 @@ const ServiceDetail: React.FC = () => {
       ],
       benefits: [
         "Intervention en moins de 30 minutes",
-        "Devis gratuit et transparent", 
+        "Devis gratuit et transparent",
         "Artisan certifié A2P",
         "Garantie sur tous nos travaux",
         "Paiement sécurisé",
@@ -96,7 +96,7 @@ const ServiceDetail: React.FC = () => {
         },
         {
           step: "02",
-          title: "Déblocage sécurisé", 
+          title: "Déblocage sécurisé",
           description: "Intervention sans dégât pour préserver l'intégrité"
         },
         {
@@ -180,7 +180,7 @@ const ServiceDetail: React.FC = () => {
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
                   <div className="flex items-center space-x-2 text-green-400">
                     <Clock className="w-5 h-5" />
-                      <span className="font-semibold">Intervention &lt; 30min</span>
+                    <span className="font-semibold">Intervention &lt; 30min</span>
                   </div>
                   <div className="text-sm text-gray-300">Temps d'intervention</div>
                 </div>
@@ -188,7 +188,7 @@ const ServiceDetail: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <MagneticButton
-                  href="tel:+33123456789"
+                  href="tel:+33185097365"
                   className="inline-flex items-center space-x-2 bg-orange-600 hover:bg-orange-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-200 hover:shadow-lg"
                 >
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -406,7 +406,7 @@ const ServiceDetail: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
               <MagneticButton
-                href="tel:+33123456789"
+                href="tel:+33185097365"
                 className="inline-flex items-center space-x-2 bg-white text-gray-900 px-6 sm:px-10 py-3 sm:py-4 rounded-lg font-bold text-lg sm:text-xl hover:bg-gray-100 transition-all duration-200 hover:shadow-lg"
               >
                 <Phone className="w-5 h-5 sm:w-6 sm:h-6" />

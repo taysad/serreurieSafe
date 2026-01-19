@@ -55,7 +55,7 @@ const ContextualCTA: React.FC<ContextualCTAProps> = ({
 
   const handleAction = () => {
     if (ctaContent.actionType === "call") {
-      window.location.href = "tel:+33123456789";
+      window.location.href = "tel:+33185097365";
     } else {
       window.location.href = "/contact";
     }
@@ -135,7 +135,7 @@ const ContextualCTA: React.FC<ContextualCTAProps> = ({
             <div className="space-y-3">
               {ctaContent.actionType === "call" ? (
                 <MagneticButton
-                  href="tel:+33123456789"
+                  href="tel:+33185097365"
                   className={`w-full ${ctaContent.bgColor} text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105 flex items-center justify-center space-x-2`}
                 >
                   <Phone className="w-5 h-5" />
@@ -154,7 +154,7 @@ const ContextualCTA: React.FC<ContextualCTAProps> = ({
               {/* Additional Actions */}
               <div className="grid grid-cols-2 gap-2">
                 <MagneticButton
-                  href="tel:+33123456789"
+                  href="tel:+33185097365"
                   className="flex items-center space-x-2 p-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors text-sm"
                 >
                   <Phone className="w-4 h-4" />

@@ -5,7 +5,6 @@ import {
   X,
   Phone,
   Clock,
-  HelpCircle,
   ChevronDown,
   ChevronUp,
 } from "lucide-react";
@@ -48,27 +47,40 @@ const ResponsiveHeader: React.FC = () => {
   const navItems = [
     { path: "/", label: "Accueil" },
     {
-      label: "Entreprise",
+      label: "Services",
       hasDropdown: true,
       subItems: [
-        { path: "/services", label: "Services" },
-        { path: "/about", label: "À propos de nous" },
+        { path: "/services", label: "Tous nos services" },
+        { path: "/ouverture-porte", label: "Ouverture de Porte" },
+        { path: "/changement-serrure", label: "Changement Serrure" },
+        { path: "/porte-blindee", label: "Porte Blindée" },
+        { path: "/apres-effraction", label: "Mise en sécurité" },
+        { path: "/serrurier-urgence", label: "Urgence Dépannage" },
       ],
     },
     { path: "/emergency", label: "Urgence 24h/24" },
-    { path: "/gallery", label: "Réalisations" },
-    { path: "/blog", label: "Actualités" },
+    {
+      label: "Ressources",
+      hasDropdown: true,
+      subItems: [
+        { path: "/conseils", label: "Conseils & Guides" },
+        { path: "/comparatif-serrures", label: "Comparatif Serrures" },
+        { path: "/avis-clients", label: "Avis Clients (4.9/5)" },
+        { path: "/faq", label: "Questions Fréquentes" },
+        { path: "/blog", label: "Actualités" },
+        { path: "/gallery", label: "Réalisations" },
+      ],
+    },
     { path: "/contact", label: "Contact" },
   ];
 
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-gray-100 dark:border-gray-800"
-            : "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+          ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-gray-100 dark:border-gray-800"
+          : "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24 lg:h-28">
@@ -99,17 +111,15 @@ const ResponsiveHeader: React.FC = () => {
                     onMouseLeave={() => setActiveDropdown(null)}
                   >
                     <button
-                      className={`flex items-center space-x-1 px-3 xl:px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
-                        activeDropdown === item.label
-                          ? "text-orange-600 bg-orange-50 dark:bg-orange-900/20"
-                          : "text-gray-700 dark:text-gray-300 hover:text-orange-600 hover:bg-gray-50 dark:hover:bg-gray-800"
-                      }`}
+                      className={`flex items-center space-x-1 px-3 xl:px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${activeDropdown === item.label
+                        ? "text-orange-600 bg-orange-50 dark:bg-orange-900/20"
+                        : "text-gray-700 dark:text-gray-300 hover:text-orange-600 hover:bg-gray-50 dark:hover:bg-gray-800"
+                        }`}
                     >
                       <span>{item.label}</span>
                       <ChevronDown
-                        className={`w-4 h-4 transition-transform duration-200 ${
-                          activeDropdown === item.label ? "rotate-180" : ""
-                        }`}
+                        className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === item.label ? "rotate-180" : ""
+                          }`}
                       />
                     </button>
 
@@ -137,20 +147,19 @@ const ResponsiveHeader: React.FC = () => {
                       )}
                     </AnimatePresence>
                   </div>
-                ) : (
+                ) : item.path ? (
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`flex items-center px-3 xl:px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
-                      location.pathname === item.path
-                        ? "text-orange-600 bg-orange-50 dark:bg-orange-900/20"
-                        : "text-gray-700 dark:text-gray-300 hover:text-orange-600 hover:bg-gray-50 dark:hover:bg-gray-800"
-                    }`}
+                    className={`flex items-center px-3 xl:px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${location.pathname === item.path
+                      ? "text-orange-600 bg-orange-50 dark:bg-orange-900/20"
+                      : "text-gray-700 dark:text-gray-300 hover:text-orange-600 hover:bg-gray-50 dark:hover:bg-gray-800"
+                      }`}
                     onClick={playClickSound}
                   >
                     {item.label}
                   </Link>
-                )
+                ) : null
               )}
             </nav>
 
@@ -266,20 +275,19 @@ const ResponsiveHeader: React.FC = () => {
                         )}
                       </AnimatePresence>
                     </div>
-                  ) : (
+                  ) : item.path ? (
                     <Link
                       key={item.path}
                       to={item.path}
                       onClick={() => setIsMenuOpen(false)}
-                      className={`flex items-center justify-between text-base font-medium rounded-lg px-4 py-3 transition-all duration-200 ${
-                        location.pathname === item.path
+                      className={`flex items-center justify-between text-base font-medium rounded-lg px-4 py-3 transition-all duration-200 ${location.pathname === item.path
                           ? "text-orange-600 bg-orange-50 dark:bg-orange-900/20 shadow-sm"
                           : "text-gray-700 dark:text-gray-300 hover:text-orange-600 hover:bg-gray-50 dark:hover:bg-gray-800"
-                      }`}
+                        }`}
                     >
                       <span>{item.label}</span>
                     </Link>
-                  )
+                  ) : null
                 )}
               </nav>
 

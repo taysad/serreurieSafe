@@ -3,6 +3,19 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import BlogEditorialHero from "../components/BlogEditorialHero";
+import { blogArticles as blogPosts } from "../data/blogArticles";
+
+interface BlogPost {
+  id: number;
+  slug: string;
+  title: string;
+  excerpt: string;
+  author: string;
+  date: string;
+  readTime: string;
+  category: string;
+  image: string;
+}
 
 const Blog: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState("Tous");
@@ -16,61 +29,10 @@ const Blog: React.FC = () => {
     "Réglementation",
   ];
 
-  const blogPosts = [
-    {
-      id: 1,
-      slug: "reglementation-serrures-2024",
-      title: "Nouvelle réglementation sur les serrures en 2024 : ce qui change",
-      excerpt:
-        "Les nouvelles normes de sécurité impactent désormais les serrures multipoints et connectées. Voici ce qu’il faut savoir.",
-      author: "Jean Dupont",
-      date: "2024-01-15",
-      readTime: "5 min",
-      category: "Réglementation",
-      image: "OIP (5).jpeg",
-    },
-    {
-      id: 2,
-      slug: "serrures-connectees-avenir",
-      title: "Les serrures connectées : l’avenir de la sécurité domestique",
-      excerpt:
-        "Entre innovation et risques, découvrez comment les serrures intelligentes transforment la protection du domicile.",
-      author: "Marie Martin",
-      date: "2024-01-10",
-      readTime: "6 min",
-      category: "Technologie",
-      image: "shutterstock_1026440218-1920x1280.jpg",
-    },
-    {
-      id: 3,
-      slug: "prevention-cambriolages",
-      title: "10 conseils d’experts pour prévenir les cambriolages",
-      excerpt:
-        "Les bons réflexes à adopter avant qu’il ne soit trop tard. Des solutions concrètes pour chaque type d’habitat.",
-      author: "Sophie Leroy",
-      date: "2024-01-05",
-      readTime: "7 min",
-      category: "Sécurité",
-      image: "Cambrioleur.jpg",
-    },
-    {
-      id: 4,
-      slug: "entretien-serrures-guide",
-      title: "Guide complet pour l’entretien de vos serrures",
-      excerpt:
-        "Un entretien régulier garantit longévité et performance. Découvrez nos astuces pour prolonger la durée de vie de vos serrures.",
-      author: "Marc Rousseau",
-      date: "2024-01-03",
-      readTime: "4 min",
-      category: "Conseils",
-      image: "serrure-a-cylindre.png",
-    },
-  ];
-
   const filteredPosts =
     selectedCategory === "Tous"
       ? blogPosts
-      : blogPosts.filter((post) => post.category === selectedCategory);
+      : (blogPosts as BlogPost[]).filter((post) => post.category === selectedCategory);
 
   return (
     <div className="min-h-screen text-gray-900">
@@ -85,11 +47,10 @@ const Blog: React.FC = () => {
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setSelectedCategory(cat)}
-            className={`px-5 py-2 rounded-full text-sm sm:text-base font-semibold border transition-all duration-300 ${
-              selectedCategory === cat
-                ? "bg-gradient-to-r from-orange-500 to-red-500 text-white border-transparent shadow-lg"
-                : "border-gray-400 text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            }`}
+            className={`px-5 py-2 rounded-full text-sm sm:text-base font-semibold border transition-all duration-300 ${selectedCategory === cat
+              ? "bg-gradient-to-r from-orange-500 to-red-500 text-white border-transparent shadow-lg"
+              : "border-gray-400 text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              }`}
           >
             {cat}
           </motion.button>
@@ -112,9 +73,8 @@ const Blog: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className={`flex flex-col lg:flex-row items-center gap-10 relative ${
-              i % 2 === 1 ? "lg:flex-row-reverse" : ""
-            }`}
+            className={`flex flex-col lg:flex-row items-center gap-10 relative ${i % 2 === 1 ? "lg:flex-row-reverse" : ""
+              }`}
           >
             {/* IMAGE */}
             <div className="flex-1 relative">

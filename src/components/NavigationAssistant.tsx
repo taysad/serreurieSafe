@@ -170,7 +170,7 @@ const NavigationAssistant: React.FC = () => {
               id: "call",
               label: "Appeler",
               icon: <Phone className="w-4 h-4" />,
-              action: () => window.open("tel:+33123456789"),
+              action: () => window.open("tel:+33185097365"),
               type: "primary",
             },
           ];
@@ -205,7 +205,7 @@ const NavigationAssistant: React.FC = () => {
               id: "call",
               label: "Appeler",
               icon: <Phone className="w-4 h-4" />,
-              action: () => window.open("tel:+33123456789"),
+              action: () => window.open("tel:+33185097365"),
               type: "primary",
             },
             {
@@ -336,16 +336,14 @@ const NavigationAssistant: React.FC = () => {
                     key={message.id}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className={`flex ${
-                      message.type === "user" ? "justify-end" : "justify-start"
-                    }`}
+                    className={`flex ${message.type === "user" ? "justify-end" : "justify-start"
+                      }`}
                   >
                     <div
-                      className={`max-w-[80%] p-3 rounded-2xl ${
-                        message.type === "user"
+                      className={`max-w-[80%] p-3 rounded-2xl ${message.type === "user"
                           ? "bg-blue-600 text-white"
                           : "bg-gray-100 text-gray-900"
-                      }`}
+                        }`}
                     >
                       <p className="whitespace-pre-line">{message.content}</p>
 
@@ -374,11 +372,10 @@ const NavigationAssistant: React.FC = () => {
                             <button
                               key={action.id}
                               onClick={() => handleActionClick(action)}
-                              className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                                action.type === "primary"
+                              className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${action.type === "primary"
                                   ? "bg-white text-blue-600 hover:bg-gray-100"
                                   : "bg-blue-500 text-white hover:bg-blue-600"
-                              }`}
+                                }`}
                             >
                               {action.icon}
                               <span>{action.label}</span>

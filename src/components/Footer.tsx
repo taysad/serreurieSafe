@@ -25,20 +25,20 @@ const Footer: React.FC = () => {
     {
       title: "Services",
       links: [
-        { label: "Ouverture de porte", href: "/services" },
-        { label: "Installation de serrures", href: "/services" },
-        { label: "Blindage de porte", href: "/services" },
-        { label: "Dépannage urgent", href: "/emergency" },
-        { label: "Conseil sécurité", href: "/services" },
+        { label: "Ouverture de porte", href: "/ouverture-porte" },
+        { label: "Changement de serrure", href: "/changement-serrure" },
+        { label: "Porte blindée", href: "/porte-blindee" },
+        { label: "Après effraction", href: "/apres-effraction" },
+        { label: "Serrurier urgence", href: "/serrurier-urgence" },
       ],
     },
     {
       title: "Entreprise",
       links: [
         { label: "À propos", href: "/about" },
-        { label: "Nos réalisations", href: "/gallery" },
-        { label: "Actualités", href: "/blog" },
-        { label: "Contact", href: "/contact" },
+        { label: "Avis Clients", href: "/avis-clients" },
+        { label: "Conseils", href: "/conseils" },
+        { label: "Comparatif Serrures", href: "/comparatif-serrures" },
       ],
     },
     {
@@ -46,8 +46,8 @@ const Footer: React.FC = () => {
       links: [
         { label: "Urgence 24h/24", href: "/emergency" },
         { label: "Devis gratuit", href: "/contact" },
-        { label: "Zone d'intervention", href: "/contact" },
         { label: "FAQ", href: "/faq" },
+        { label: "Plan du site", href: "/sitemap" },
       ],
     },
   ];

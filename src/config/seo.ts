@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 
 export const contactInfo = {
   name: "Serrurerie Safe",
-  phone: "+33123456789", // Replace with real phone
+  phone: "+33185097365", // 01 85 09 73 65
   email: "contact@serrurerie-safe.fr", // Replace with real email
   address: {
     street: "10 Rue de la Paix", // Replace with real address

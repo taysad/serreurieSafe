@@ -18,6 +18,21 @@ const Legal = React.lazy(() => import("./pages/Legal"));
 const LocalPage = React.lazy(() => import("./pages/local/LocalPage"));
 const LandingPageCity = React.lazy(() => import("./pages/landing/LandingPageCity"));
 const Pricing = React.lazy(() => import("./pages/Pricing"));
+const ThankYou = React.lazy(() => import("./pages/ThankYou"));
+
+// Service Silo Pages
+const OpeningDoor = React.lazy(() => import("./pages/services/OpeningDoor"));
+const LockChange = React.lazy(() => import("./pages/services/LockChange"));
+const ArmoredDoor = React.lazy(() => import("./pages/services/ArmoredDoor"));
+const AfterBurglary = React.lazy(() => import("./pages/services/AfterBurglary"));
+const LocksmithEmergency = React.lazy(() => import("./pages/services/LocksmithEmergency"));
+
+// Authority Hub Pages
+const AdviceHub = React.lazy(() => import("./pages/blog/AdviceHub"));
+const LockComparison = React.lazy(() => import("./pages/blog/LockComparison"));
+const FAQPage = React.lazy(() => import("./pages/FAQPage"));
+const ReviewsPage = React.lazy(() => import("./pages/ReviewsPage"));
+const Sitemap = React.lazy(() => import("./pages/Sitemap"));
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -65,11 +80,28 @@ function App() {
                 <Route path="about" element={<About />} />
                 <Route path="services" element={<Services />} />
                 <Route path="services/:serviceId" element={<ServiceDetail />} />
+
+                {/* Service Silo Routes */}
+                <Route path="ouverture-porte" element={<OpeningDoor />} />
+                <Route path="changement-serrure" element={<LockChange />} />
+                <Route path="porte-blindee" element={<ArmoredDoor />} />
+                <Route path="apres-effraction" element={<AfterBurglary />} />
+                <Route path="serrurier-urgence" element={<LocksmithEmergency />} />
+
+                {/* Authority Hub Routes */}
+                <Route path="conseils" element={<AdviceHub />} />
+                <Route path="comparatif-serrures" element={<LockComparison />} />
+                <Route path="faq" element={<FAQPage />} />
+                <Route path="avis-clients" element={<ReviewsPage />} />
+
+                <Route path="sitemap" element={<Sitemap />} />
                 <Route path="emergency" element={<Emergency />} />
                 <Route path="gallery" element={<Gallery />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="blog" element={<Blog />} />
                 <Route path="blog/:slug" element={<BlogPost />} />
+                <Route path="thank-you" element={<ThankYou />} />
+
                 <Route path="legal" element={<Legal />} />
                 <Route path="tarifs-serrurier-paris" element={<Pricing />} />
                 <Route path="serrurier-:slug" element={<LocalPage />} />

@@ -251,14 +251,14 @@ const BlogPost: React.FC = () => {
 
       {/* Article Header */}
       <section className="relative py-20 overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url("${currentPost.image}")`,
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
-        
+
         <div className="relative z-10 container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -271,11 +271,11 @@ const BlogPost: React.FC = () => {
                 {currentPost.category}
               </span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
               {currentPost.title}
             </h1>
-            
+
             <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed">
               {currentPost.excerpt}
             </p>
@@ -287,10 +287,10 @@ const BlogPost: React.FC = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Calendar className="w-5 h-5" />
-                <span>{new Date(currentPost.date).toLocaleDateString('fr-FR', { 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
+                <span>{new Date(currentPost.date).toLocaleDateString('fr-FR', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
                 })}</span>
               </div>
               <div className="flex items-center space-x-2">
@@ -331,7 +331,7 @@ const BlogPost: React.FC = () => {
                   </div>
 
                   {/* Article Content */}
-                  <div 
+                  <div
                     className="prose prose-lg max-w-none prose-headings:text-gray-800 prose-p:text-gray-600 prose-p:leading-relaxed prose-a:text-orange-500 prose-strong:text-gray-800 prose-ul:text-gray-600 prose-ol:text-gray-600"
                     dangerouslySetInnerHTML={{ __html: currentPost.content }}
                   />
@@ -406,7 +406,7 @@ const BlogPost: React.FC = () => {
                     Nos experts sont disponibles 24h/24 pour répondre à vos questions.
                   </p>
                   <a
-                    href="tel:+33123456789"
+                    href="tel:+33185097365"
                     className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105 inline-block"
                   >
                     01 23 45 67 89
@@ -421,13 +421,13 @@ const BlogPost: React.FC = () => {
       {/* Related Articles */}
       {relatedPosts.length > 0 && (
         <section className="py-20 relative">
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
             style={{
               backgroundImage: 'url("https://images.pexels.com/photos/277559/pexels-photo-277559.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop")',
             }}
           ></div>
-          
+
           <div className="relative z-10 container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 50 }}

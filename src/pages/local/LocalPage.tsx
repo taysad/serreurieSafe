@@ -10,6 +10,10 @@ const cityData: Record<string, { name: string; zip: string; description: string 
     'paris-2': { name: 'Paris 2ème', zip: '75002', description: 'Serrurier expert Bourse et Sentier.' },
     // ... add more districts
     'boulogne': { name: 'Boulogne-Billancourt', zip: '92100', description: 'Dépannage serrurerie à Boulogne.' },
+    'creteil': { name: 'Créteil', zip: '94000', description: 'Serrurier urgence Créteil (Préfecture, Mont-Mesly, Échat).' },
+    'maisons-alfort': { name: 'Maisons-Alfort', zip: '94700', description: 'Intervention 30 min Maisons-Alfort, Stade, Charentonneau.' },
+    'saint-maur': { name: 'Saint-Maur-des-Fossés', zip: '94100', description: 'Artisan serrurier Saint-Maur, La Varenne, Le Parc.' },
+    'vitry': { name: 'Vitry-sur-Seine', zip: '94400', description: 'Dépannage serrurerie Vitry-sur-Seine jour et nuit.' },
 };
 
 const LocalPage: React.FC = () => {
@@ -141,6 +145,10 @@ const LocalPage: React.FC = () => {
                             <Link to="/serrurier-paris-1" className="text-orange-600 hover:underline">Paris 1er</Link>
                             <Link to="/serrurier-paris-2" className="text-orange-600 hover:underline">Paris 2ème</Link>
                             <Link to="/serrurier-boulogne" className="text-orange-600 hover:underline">Boulogne</Link>
+                            <Link to="/serrurier-creteil" className="text-orange-600 hover:underline">Créteil</Link>
+                            <Link to="/serrurier-maisons-alfort" className="text-orange-600 hover:underline">Maisons-Alfort</Link>
+                            <Link to="/serrurier-saint-maur" className="text-orange-600 hover:underline">Saint-Maur</Link>
+                            <Link to="/serrurier-vitry" className="text-orange-600 hover:underline">Vitry</Link>
                             {/* Add more links dynamically */}
                         </div>
                     </div>
