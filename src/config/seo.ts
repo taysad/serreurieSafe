@@ -23,9 +23,9 @@ export const socialLinks = {
 };
 
 export const defaultSEO = {
-  title: "Serrurier Paris - Dépannage Urgence 24/7 | Serrurerie Safe",
+  title: "Serrurier Paris & Essonne - Dépannage Urgence 24/7 | Serrurerie Safe",
   titleTemplate: "%s | Serrurerie Safe",
-  description: "Serrurier Paris agréé assurances. Ouverture de porte, changement de serrure, blindage. Intervention en 30 min, devis gratuit. Disponible 24h/24 et 7j/7.",
+  description: "Serrurier Paris et Essonne (91) agréé assurances. Ouverture de porte, changement de serrure, blindage. Intervention en 30 min à Viry-Châtillon, Juvisy, Savigny et tout le 91. Disponible 24h/24.",
   url: "https://serrurerie-safe.fr",
   siteName: "Serrurerie Safe",
   defaultImage: "https://serrurerie-safe.fr/default-og.jpg",

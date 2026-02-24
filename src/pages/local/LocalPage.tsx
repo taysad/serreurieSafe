@@ -14,6 +14,17 @@ const cityData: Record<string, { name: string; zip: string; description: string 
     'maisons-alfort': { name: 'Maisons-Alfort', zip: '94700', description: 'Intervention 30 min Maisons-Alfort, Stade, Charentonneau.' },
     'saint-maur': { name: 'Saint-Maur-des-Fossés', zip: '94100', description: 'Artisan serrurier Saint-Maur, La Varenne, Le Parc.' },
     'vitry': { name: 'Vitry-sur-Seine', zip: '94400', description: 'Dépannage serrurerie Vitry-sur-Seine jour et nuit.' },
+    'viry-chatillon': { name: 'Viry-Châtillon', zip: '91170', description: 'Serrurier expert à Viry-Châtillon, intervention rapide quartier Lac et Centre.' },
+    'juvisy': { name: 'Juvisy-sur-Orge', zip: '91260', description: 'Dépannage serrurerie Juvisy, proche gare et centre-ville.' },
+    'savigny': { name: 'Savigny-sur-Orge', zip: '91600', description: 'Artisan serrurier Savigny-sur-Orge, disponible 24h/24.' },
+    'ris-orangis': { name: 'Ris-Orangis', zip: '91130', description: 'Intervention urgence Ris-Orangis, quartier de la Ferme et Plateau.' },
+    'morsang': { name: 'Morsang-sur-Orge', zip: '91390', description: 'Serrurier Morsang-sur-Orge, sécurisation après effraction.' },
+    'ste-genevieve': { name: 'Sainte Geneviève des Bois', zip: '91700', description: 'Dépannage serrurier Ste-Geneviève, quartier de la Gare et Donjon.' },
+    'draveil': { name: 'Draveil', zip: '91210', description: 'Expert serrurerie Draveil, intervention 30 min.' },
+    'fleury': { name: 'Fleury Mérogis', zip: '91700', description: 'Artisan serrurier Fleury-Mérogis, devis gratuit.' },
+    'athis-mons': { name: 'Athis-Mons', zip: '91200', description: 'Serrurier Athis-Mons, ouverture de porte et blindage.' },
+    'essonne': { name: 'Essonne', zip: '91', description: 'Serrurerie pro dans tout le département de l\'Essonne.' },
+    'ile-de-france': { name: 'Île-de-France', zip: 'IDF', description: 'Serruriers qualifiés partout en Île-de-France.' },
 };
 
 const LocalPage: React.FC = () => {
@@ -142,13 +153,11 @@ const LocalPage: React.FC = () => {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Zones d'intervention proches</h3>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/serrurier-paris-1" className="text-orange-600 hover:underline">Paris 1er</Link>
-                            <Link to="/serrurier-paris-2" className="text-orange-600 hover:underline">Paris 2ème</Link>
-                            <Link to="/serrurier-boulogne" className="text-orange-600 hover:underline">Boulogne</Link>
-                            <Link to="/serrurier-creteil" className="text-orange-600 hover:underline">Créteil</Link>
-                            <Link to="/serrurier-maisons-alfort" className="text-orange-600 hover:underline">Maisons-Alfort</Link>
-                            <Link to="/serrurier-saint-maur" className="text-orange-600 hover:underline">Saint-Maur</Link>
-                            <Link to="/serrurier-vitry" className="text-orange-600 hover:underline">Vitry</Link>
+                            <Link to="/serrurier-viry-chatillon" className="text-orange-600 hover:underline">Viry-Châtillon</Link>
+                            <Link to="/serrurier-juvisy" className="text-orange-600 hover:underline">Juvisy</Link>
+                            <Link to="/serrurier-savigny" className="text-orange-600 hover:underline">Savigny</Link>
+                            <Link to="/serrurier-ris-orangis" className="text-orange-600 hover:underline">Ris-Orangis</Link>
+                            <Link to="/serrurier-essonne" className="text-orange-600 hover:underline">Essonne (91)</Link>
                             {/* Add more links dynamically */}
                         </div>
                     </div>

@@ -100,6 +100,14 @@ const InteractiveMap: React.FC = () => {
       color: "#fed7aa",
       coordinates: { x: 75, y: 30 },
     },
+    {
+      id: "essonne",
+      name: "Essonne",
+      areas: ["91170", "91260", "91600", "91130"],
+      responseTime: "30-40 min",
+      color: "#ea580c",
+      coordinates: { x: 45, y: 85 },
+    },
   ];
 
   const clients: Client[] = [
@@ -224,11 +232,10 @@ const InteractiveMap: React.FC = () => {
               <button
                 key={mode.id}
                 onClick={() => setViewMode(mode.id as any)}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                  viewMode === mode.id
+                className={`flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${viewMode === mode.id
                     ? "bg-blue-600 text-white"
                     : "text-gray-600 hover:text-gray-900"
-                }`}
+                  }`}
               >
                 {mode.icon}
                 <span>{mode.label}</span>
@@ -641,11 +648,10 @@ const InteractiveMap: React.FC = () => {
                 onClick={() =>
                   setSelectedZone(selectedZone === zone.id ? null : zone.id)
                 }
-                className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all ${
-                  selectedZone === zone.id
+                className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all ${selectedZone === zone.id
                     ? "bg-white shadow-lg"
                     : "bg-white/50 hover:bg-white/80"
-                }`}
+                  }`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
