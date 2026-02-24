@@ -53,98 +53,114 @@ const InteractiveMap: React.FC = () => {
 
   const serviceZones: ServiceZone[] = [
     {
-      id: "center",
-      name: "Paris Centre",
-      areas: ["1er", "2ème", "3ème", "4ème"],
-      responseTime: "15-20 min",
+      id: "viry",
+      name: "Viry-Châtillon",
+      areas: ["91170"],
+      responseTime: "20-30 min",
       color: "#dc2626",
-      coordinates: { x: 50, y: 45 },
+      coordinates: { x: 45, y: 75 },
     },
     {
-      id: "west",
-      name: "Paris Ouest",
-      areas: ["7ème", "8ème", "16ème", "17ème"],
-      responseTime: "20-25 min",
+      id: "juvisy",
+      name: "Juvisy-sur-Orge",
+      areas: ["91260"],
+      responseTime: "15-25 min",
       color: "#ea580c",
-      coordinates: { x: 35, y: 40 },
+      coordinates: { x: 55, y: 70 },
     },
     {
-      id: "east",
-      name: "Paris Est",
-      areas: ["11ème", "12ème", "19ème", "20ème"],
+      id: "savigny",
+      name: "Savigny-sur-Orge",
+      areas: ["91600"],
       responseTime: "20-30 min",
       color: "#f97316",
-      coordinates: { x: 65, y: 50 },
+      coordinates: { x: 35, y: 70 },
     },
     {
-      id: "north",
-      name: "Paris Nord",
-      areas: ["9ème", "10ème", "18ème"],
-      responseTime: "25-30 min",
+      id: "ris",
+      name: "Ris-Orangis",
+      areas: ["91130"],
+      responseTime: "25-35 min",
       color: "#fb923c",
-      coordinates: { x: 50, y: 25 },
+      coordinates: { x: 65, y: 80 },
     },
     {
-      id: "south",
-      name: "Paris Sud",
-      areas: ["13ème", "14ème", "15ème"],
-      responseTime: "25-30 min",
+      id: "morsang",
+      name: "Morsang-sur-Orge",
+      areas: ["91390"],
+      responseTime: "20-30 min",
       color: "#fdba74",
-      coordinates: { x: 45, y: 70 },
+      coordinates: { x: 40, y: 85 },
     },
     {
-      id: "suburbs",
-      name: "Banlieue",
-      areas: ["92", "93", "94", "95"],
-      responseTime: "30-45 min",
+      id: "ste-genevieve",
+      name: "Ste-Geneviève",
+      areas: ["91700"],
+      responseTime: "25-35 min",
       color: "#fed7aa",
-      coordinates: { x: 75, y: 30 },
+      coordinates: { x: 30, y: 80 },
     },
     {
-      id: "essonne",
-      name: "Essonne",
-      areas: ["91170", "91260", "91600", "91130"],
-      responseTime: "30-40 min",
+      id: "draveil",
+      name: "Draveil",
+      areas: ["91210"],
+      responseTime: "25-35 min",
+      color: "#ffedd5",
+      coordinates: { x: 60, y: 60 },
+    },
+    {
+      id: "fleury",
+      name: "Fleury Mérogis",
+      areas: ["91700"],
+      responseTime: "25-35 min",
+      color: "#fb923c",
+      coordinates: { x: 25, y: 85 },
+    },
+    {
+      id: "athis",
+      name: "Athis-Mons",
+      areas: ["91200"],
+      responseTime: "15-25 min",
       color: "#ea580c",
-      coordinates: { x: 45, y: 85 },
+      coordinates: { x: 55, y: 60 },
     },
   ];
 
   const clients: Client[] = [
     {
       id: "client1",
-      name: "Marie Dubois",
+      name: "Marie - Viry",
       type: "individual",
       rating: 5,
-      lastService: "Ouverture de porte",
-      coordinates: { x: 45, y: 40 },
+      lastService: "Ouverture porte",
+      coordinates: { x: 46, y: 76 },
       status: "active",
     },
     {
       id: "client2",
-      name: "Hôtel Plaza",
+      name: "Hôtel Juvisy",
       type: "business",
       rating: 5,
-      lastService: "Installation serrures",
-      coordinates: { x: 35, y: 35 },
+      lastService: "Serrure blindée",
+      coordinates: { x: 56, y: 71 },
       status: "active",
     },
     {
       id: "client3",
-      name: "Jean Martin",
+      name: "Jean - Savigny",
       type: "individual",
       rating: 5,
-      lastService: "Urgence nocturne",
-      coordinates: { x: 60, y: 50 },
+      lastService: "Urgence 24/7",
+      coordinates: { x: 36, y: 71 },
       status: "active",
     },
     {
       id: "client4",
-      name: "Restaurant Le Bistrot",
+      name: "Mairie Athis-Mons",
       type: "business",
-      rating: 4,
+      rating: 5,
       lastService: "Maintenance",
-      coordinates: { x: 55, y: 30 },
+      coordinates: { x: 56, y: 61 },
       status: "active",
     },
   ];
@@ -233,8 +249,8 @@ const InteractiveMap: React.FC = () => {
                 key={mode.id}
                 onClick={() => setViewMode(mode.id as any)}
                 className={`flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${viewMode === mode.id
-                    ? "bg-blue-600 text-white"
-                    : "text-gray-600 hover:text-gray-900"
+                  ? "bg-blue-600 text-white"
+                  : "text-gray-600 hover:text-gray-900"
                   }`}
               >
                 {mode.icon}
@@ -649,8 +665,8 @@ const InteractiveMap: React.FC = () => {
                   setSelectedZone(selectedZone === zone.id ? null : zone.id)
                 }
                 className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all ${selectedZone === zone.id
-                    ? "bg-white shadow-lg"
-                    : "bg-white/50 hover:bg-white/80"
+                  ? "bg-white shadow-lg"
+                  : "bg-white/50 hover:bg-white/80"
                   }`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
