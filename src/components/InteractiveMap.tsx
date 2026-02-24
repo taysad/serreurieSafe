@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   MapPin,
   Clock,
   Phone,
-  Navigation,
   User,
   Building,
   Star,
@@ -49,7 +48,6 @@ const InteractiveMap: React.FC = () => {
   const [viewMode, setViewMode] = useState<"zones" | "clients" | "partners">(
     "zones"
   );
-  const [showStats, setShowStats] = useState(false);
 
   const serviceZones: ServiceZone[] = [
     {
