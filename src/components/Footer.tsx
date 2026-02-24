@@ -50,6 +50,16 @@ const Footer: React.FC = () => {
         { label: "Plan du site", href: "/sitemap" },
       ],
     },
+    {
+      title: "Villes 91",
+      links: [
+        { label: "Viry-Châtillon", href: "/serrurier-viry-chatillon" },
+        { label: "Juvisy-sur-Orge", href: "/serrurier-juvisy" },
+        { label: "Savigny-sur-Orge", href: "/serrurier-savigny" },
+        { label: "Ris-Orangis", href: "/serrurier-ris-orangis" },
+        { label: "Athis-Mons", href: "/serrurier-athis-mons" },
+      ],
+    },
   ];
 
   return (
@@ -216,7 +226,7 @@ const Footer: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-gray-700 text-[14px]"
+            className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-gray-700 text-[14px]"
           >
             {footerSections.map((section, index) => (
               <div key={index}>
