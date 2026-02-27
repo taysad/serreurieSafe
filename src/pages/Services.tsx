@@ -25,7 +25,7 @@ const Services: React.FC = () => {
       image:
         "Debloquer_une_serrure_sans_l_endommager__Techniques_efficaces-1536x867.webp",
       description:
-        "Ouverture rapide, remplacement et sécurisation de serrures toutes marques. Intervention professionnelle en moins de 30 minutes, 24h/24 à Paris et alentours.",
+        "Ouverture rapide, remplacement et sécurisation de serrures toutes marques. Intervention professionnelle en moins de 30 minutes, 24h/24 à Viry-Châtillon et alentours.",
       points: [
         "Ouverture sans dégât",
         "Serrures multipoints",

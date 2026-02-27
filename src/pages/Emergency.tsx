@@ -47,11 +47,11 @@ const Emergency: React.FC = () => {
 
   const interventionZones = [
     {
-      name: "Paris 1er",
+      name: "Viry-Châtillon 1er",
       image: "arrondissement-paris-1068x601.jpg",
     },
     {
-      name: "Paris 8e",
+      name: "Viry-Châtillon 8e",
       image: "bb2fda69b8bb647d0e617a9531ce3e41.avif",
     },
     {
@@ -105,7 +105,7 @@ const Emergency: React.FC = () => {
       <title>Urgence Serrurerie 24h/24 Partout en Île-de-France - Dépannage rapide</title>
       <meta
         name="description"
-        content="Serrurier Paris urgence 24h/24 - Intervention rapide en moins de 30 min. Ouverture de porte, serrure cassée, effraction. Devis clair et sans casse."
+        content="Serrurier Viry-Châtillon urgence 24h/24 - Intervention rapide en moins de 30 min. Ouverture de porte, serrure cassée, effraction. Devis clair et sans casse."
       />
 
       <main className="pt-20 bg-white text-gray-900 overflow-hidden">
@@ -145,7 +145,7 @@ const Emergency: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+331 85 09 73 65"
+                href="tel:+33185097365"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-white text-lg font-semibold shadow-lg hover:scale-105 transition-all"
               >
                 <Phone className="w-6 h-6 mr-2" /> Appeler maintenant
@@ -176,7 +176,7 @@ const Emergency: React.FC = () => {
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Nos serruriers professionnels interviennent rapidement dans tout
-              Paris et ses environs. Cliquez sur une zone pour plus de détails.
+              Viry-Châtillon et ses environs. Cliquez sur une zone pour plus de détails.
             </p>
           </div>
 

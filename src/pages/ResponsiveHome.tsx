@@ -92,7 +92,7 @@ const ResponsiveHome: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <a
-                href="tel:+331 85 09 73 65"
+                href="tel:+33185097365"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FF6B00] to-[#FF3C00] text-white px-6 py-2.5 rounded-lg font-bold text-lg shadow hover:shadow-lg transition-all"
               >
                 <Phone className="w-5 h-5" />
@@ -295,7 +295,7 @@ const ResponsiveHome: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <a
-              href="tel:+331 85 09 73 65"
+              href="tel:+33185097365"
               className="inline-flex items-center justify-center gap-2 bg-white text-[#FF6B00] font-bold px-5 py-2.5 rounded-lg hover:scale-[1.05] transition-all shadow"
             >
               <Phone className="mr-2 w-5 h-5" />

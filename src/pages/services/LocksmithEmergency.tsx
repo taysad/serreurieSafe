@@ -89,7 +89,7 @@ const LocksmithEmergency: React.FC = () => {
     return (
         <div className="pt-20">
             <SEO
-                title="Serrurier Urgence Paris & IDF - Intervention en 30 min 24/7"
+                title="Serrurier Urgence Essonne (91) & IDF - Intervention en 30 min 24/7"
                 description="Serrurier d'urgence disponible immédiatement nuit et jour, dimanche et jours fériés. Ouverture porte, réparation serrure. Arrivée garantie en 30 min."
                 jsonLd={[schema]}
             />
@@ -357,7 +357,7 @@ const LocksmithEmergency: React.FC = () => {
                                 className="inline-flex items-center space-x-2 bg-white text-gray-900 px-6 sm:px-10 py-3 sm:py-4 rounded-lg font-bold text-lg sm:text-xl hover:bg-gray-100 transition-all duration-200 hover:shadow-lg"
                             >
                                 <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
-                                <span>01 23 45 67 89</span>
+                                <span>01 85 09 73 65</span>
                             </MagneticButton>
                         </div>
                         <div className="mt-8 text-orange-400 font-bold text-lg animate-pulse">

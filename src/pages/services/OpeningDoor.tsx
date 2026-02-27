@@ -21,7 +21,7 @@ const OpeningDoor: React.FC = () => {
         title: "Ouverture de Porte",
         subtitle: "Intervention Immédiate 24/7",
         description: "Porte claquée ou fermée à clé ? Ouverture fine sans destruction de serrure garantie.",
-        longDescription: "Spécialiste de l'ouverture de porte à Paris et Île-de-France. Que votre porte soit claquée, verrouillée ou que la clé soit cassée, nos artisans serruriers interviennent en 30 minutes. Nous privilégions toujours l'ouverture fine (radio, crochetage) pour préserver votre serrure et limiter les frais.",
+        longDescription: "Spécialiste de l'ouverture de porte en Essonne et Île-de-France. Que votre porte soit claquée, verrouillée ou que la clé soit cassée, nos artisans serruriers interviennent en 30 minutes. Nous privilégions toujours l'ouverture fine (radio, crochetage) pour préserver votre serrure et limiter les frais.",
         icon: Unlock,
         price: "À partir de 89€",
         features: [
@@ -103,7 +103,7 @@ const OpeningDoor: React.FC = () => {
     return (
         <div className="pt-20">
             <SEO
-                title="Ouverture de Porte Paris & IDF - Intervention 30 min - Devis Gratuit"
+                title="Ouverture de Porte Essonne (91) & IDF - Intervention 30 min - Devis Gratuit"
                 description="Serrurier expert pour ouverture de porte claquée ou fermée à clé. Intervention en 30 minutes, 24h/24 et 7j/7. Prix transparents, agréé assurances."
                 jsonLd={[schema]}
             />
@@ -162,7 +162,7 @@ const OpeningDoor: React.FC = () => {
                                     className="inline-flex items-center space-x-2 bg-orange-600 hover:bg-orange-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-200 hover:shadow-lg"
                                 >
                                     <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                                    <span>01 23 45 67 89</span>
+                                    <span>01 85 09 73 65</span>
                                 </MagneticButton>
                                 <Link
                                     to="/contact"
@@ -379,7 +379,7 @@ const OpeningDoor: React.FC = () => {
                                 className="inline-flex items-center space-x-2 bg-white text-gray-900 px-6 sm:px-10 py-3 sm:py-4 rounded-lg font-bold text-lg sm:text-xl hover:bg-gray-100 transition-all duration-200 hover:shadow-lg"
                             >
                                 <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
-                                <span>01 23 45 67 89</span>
+                                <span>01 85 09 73 65</span>
                             </MagneticButton>
                         </div>
 

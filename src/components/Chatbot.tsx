@@ -54,19 +54,19 @@ const Chatbot: React.FC = () => {
       ],
       tarif: [
         "💰 L’ouverture de porte démarre à **80 €**, le changement de serrure à **150 €**, et le **devis est toujours gratuit**.",
-        "Nos tarifs sont transparents : **80 € à 150 € selon la prestation**, déplacement inclus dans Paris. Souhaitez-vous un devis rapide ?",
+        "Nos tarifs sont transparents : **80 € à 150 € selon la prestation**, déplacement inclus dans Viry-Châtillon. Souhaitez-vous un devis rapide ?",
       ],
       horaire: [
         "🕒 Nous intervenons **24 h/24 et 7 j/7**, même la nuit et le week-end. Pour un rendez-vous planifié, nous travaillons de **8 h à 20 h**.",
         "Nous sommes disponibles **tous les jours**, sans interruption. Quelle heure vous conviendrait pour l’intervention ?",
       ],
       zone: [
-        "📍 Nous couvrons **tout Paris et l’Île-de-France** : Hauts-de-Seine, Val-de-Marne, Seine-Saint-Denis… Où êtes-vous exactement ?",
+        "📍 Nous couvrons **toute l'Essonne et l’Île-de-France** : Hauts-de-Seine, Essonne, Seine-Saint-Denis… Où êtes-vous exactement ?",
         "Nous intervenons rapidement **dans toute la région parisienne**. Pouvez-vous préciser votre adresse ou arrondissement ?",
       ],
       contact: [
-        "📞 Vous pouvez nous joindre immédiatement au **07 83 86 76 50** ou via **WhatsApp**. Réponse garantie en moins de **5 minutes** !",
-        "☎️ Voici notre contact direct : **07 83 86 76 50**. Vous pouvez aussi m’envoyer un message WhatsApp pour être rappelé rapidement.",
+        "📞 Vous pouvez nous joindre immédiatement au **01 85 09 73 65** ou via **WhatsApp**. Réponse garantie en moins de **5 minutes** !",
+        "☎️ Voici notre contact direct : **01 85 09 73 65**. Vous pouvez aussi m’envoyer un message WhatsApp pour être rappelé rapidement.",
       ],
       sécurité: [
         "🛡️ Tous nos produits sont **certifiés A2P** et répondent aux normes européennes. Serrure Safe garantit la **qualité et la sécurité** de chaque installation.",

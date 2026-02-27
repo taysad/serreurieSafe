@@ -38,7 +38,7 @@ const ClientReviews: React.FC = () => {
         "Service exceptionnel ! Intervention en 20 minutes, technicien très professionnel. Je recommande vivement.",
       verified: true,
       helpful: 12,
-      location: "Paris 15ème",
+      location: "Viry-Châtillon 15ème",
     },
     {
       id: "2",
@@ -62,7 +62,7 @@ const ClientReviews: React.FC = () => {
         "Bloquée dehors à 23h, ils sont arrivés en 15 minutes ! Service client au top, prix raisonnable.",
       verified: true,
       helpful: 15,
-      location: "Paris 11ème",
+      location: "Viry-Châtillon 11ème",
     },
   ];
 

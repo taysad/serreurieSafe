@@ -19,7 +19,7 @@ const caseStudies: CaseStudy[] = [
     title: "Remise en sécurité d'un concept-store premium",
     client: "Maison Altair",
     sector: "Retail haut de gamme",
-    location: "Paris 3e",
+    location: "Viry-Châtillon 3e",
     duration: "Intervention de nuit - 3h20",
     result:
       "Porte blindée ré-équilibrée, serrure 7 points remplacée, contrôle d'accès temporaire par badges invités.",

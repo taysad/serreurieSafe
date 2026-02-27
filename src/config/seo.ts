@@ -6,7 +6,7 @@ export const contactInfo = {
   email: "contact@serrurerie-safe.fr", // Replace with real email
   address: {
     street: "10 Rue de la Paix", // Replace with real address
-    city: "Paris",
+    city: "Viry-Châtillon",
     zip: "75001",
     country: "FR"
   },
@@ -23,9 +23,9 @@ export const socialLinks = {
 };
 
 export const defaultSEO = {
-  title: "Serrurier Paris & Essonne - Dépannage Urgence 24/7 | Serrurerie Safe",
+  title: "Serrurier Viry-Châtillon & Essonne - Dépannage Urgence 24/7 | Serrurerie Safe",
   titleTemplate: "%s | Serrurerie Safe",
-  description: "Serrurier Paris et Essonne (91) agréé assurances. Ouverture de porte, changement de serrure, blindage. Intervention en 30 min à Viry-Châtillon, Juvisy, Savigny et tout le 91. Disponible 24h/24.",
+  description: "Serrurier Viry-Châtillon et Essonne (91) agréé assurances. Ouverture de porte, changement de serrure, blindage. Intervention en 30 min à Viry-Châtillon, Juvisy, Savigny et tout le 91. Disponible 24h/24.",
   url: "https://serrurerie-safe.fr",
   siteName: "Serrurerie Safe",
   defaultImage: "https://serrurerie-safe.fr/default-og.jpg",

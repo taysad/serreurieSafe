@@ -19,7 +19,7 @@ const steps = [
     description:
       "Nous intervenons sur place en moins de 30 minutes, 24h/24 et 7j/7, pour toute urgence en serrurerie.",
     image:
-      "depannage-de-serrurerie-a-Paris-3-677e87c3ad759-sizes_cutum-1000-600.webp",
+      "depannage-de-serrurerie-a-Viry-Châtillon-3-677e87c3ad759-sizes_cutum-1000-600.webp",
   },
   {
     id: 3,

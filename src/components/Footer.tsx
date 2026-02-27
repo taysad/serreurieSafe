@@ -181,15 +181,6 @@ const Footer: React.FC = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-[#FF5B2E]" />
-                <a
-                  href="tel:+33783867650"
-                  className="hover:text-[#FF5B2E] font-medium"
-                >
-                  07 83 86 76 50
-                </a>
-              </div>
-              <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-[#FF5B2E]" />
                 <a
                   href="mailto:contact@serruresafe.fr"

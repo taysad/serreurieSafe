@@ -10,7 +10,7 @@ const ReviewsPage: React.FC = () => {
     const reviews = [
         {
             author: "Sophie Martin",
-            city: "Créteil (94000)",
+            city: "Viry-Châtillon (91170)",
             rating: 5,
             date: "Il y a 2 jours",
             service: "Ouverture de Porte",
@@ -19,7 +19,7 @@ const ReviewsPage: React.FC = () => {
         },
         {
             author: "Jean-Pierre Durand",
-            city: "Saint-Maur-des-Fossés (94100)",
+            city: "Juvisy-sur-Orge (91260)",
             rating: 5,
             date: "Il y a 1 semaine",
             service: "Installation Porte Blindée",
@@ -28,7 +28,7 @@ const ReviewsPage: React.FC = () => {
         },
         {
             author: "Marie L.",
-            city: "Maisons-Alfort (94700)",
+            city: "Savigny-sur-Orge (91600)",
             rating: 5,
             date: "Il y a 2 semaines",
             service: "Changement de Serrure",
@@ -37,7 +37,7 @@ const ReviewsPage: React.FC = () => {
         },
         {
             author: "Cabinet Médical Dupont",
-            city: "Vitry-sur-Seine (94400)",
+            city: "Ris-Orangis (91130)",
             rating: 5,
             date: "Il y a 3 semaines",
             service: "Sécurisation",
@@ -60,8 +60,8 @@ const ReviewsPage: React.FC = () => {
     return (
         <div className="pt-20">
             <SEO
-                title="Avis Clients Serrurier Créteil & Val-de-Marne (94) - Témoignages"
-                description="Découvrez les avis de nos clients sur nos interventions de serrurerie à Créteil, Saint-Maur et Île-de-France. 98% de satisfaction. Avis certifiés."
+                title="Avis Clients Serrurier Essonne (91) - Témoignages"
+                description="Découvrez les avis de nos clients sur nos interventions de serrurerie en Essonne et Île-de-France. 98% de satisfaction. Avis certifiés."
                 jsonLd={[aggregateRating]}
             />
 

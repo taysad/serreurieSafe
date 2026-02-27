@@ -16,9 +16,9 @@ const Legal: React.FC = () => {
                     <h2>1. Éditeur du site</h2>
                     <p>
                         Le site <strong>serrurerie-safe.fr</strong> est édité par la société <strong>Serrurerie Safe SAS</strong>.<br />
-                        <strong>Siège social :</strong> 10 Rue de la Paix, 75001 Paris<br />
+                        <strong>Siège social :</strong> 10 Rue de la Paix, 75001 Viry-Châtillon<br />
                         <strong>SIRET :</strong> 123 456 789 00012<br />
-                        <strong>RCS :</strong> Paris B 123 456 789<br />
+                        <strong>RCS :</strong> Viry-Châtillon B 123 456 789<br />
                         <strong>Capital social :</strong> 10 000 €<br />
                         <strong>TVA Intracommunautaire :</strong> FR 12 123456789<br />
                         <strong>Directeur de la publication :</strong> M. Jean Dupont

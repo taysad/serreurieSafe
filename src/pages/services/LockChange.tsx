@@ -21,7 +21,7 @@ const LockChange: React.FC = () => {
         title: "Changement de Serrure",
         subtitle: "Sécurité & Pose A2P",
         description: "Remplacement de serrure, changement de cylindre, installation multipoints.",
-        longDescription: "Spécialiste du changement de serrure à Paris. Nous installons des serrures de haute sécurité certifiées A2P (Picard, Bricard, Fichet, Vachette). Que ce soit suite à un emménagement, un vol de clé ou pour renforcer votre sécurité, nous avons la solution adaptée à votre porte.",
+        longDescription: "Spécialiste du changement de serrure à Viry-Châtillon. Nous installons des serrures de haute sécurité certifiées A2P (Picard, Bricard, Fichet, Vachette). Que ce soit suite à un emménagement, un vol de clé ou pour renforcer votre sécurité, nous avons la solution adaptée à votre porte.",
         icon: RefreshCw,
         price: "À partir de 120€",
         features: [
@@ -103,8 +103,8 @@ const LockChange: React.FC = () => {
     return (
         <div className="pt-20">
             <SEO
-                title="Changement de Serrure Paris - Installation A2P & Multipoints"
-                description="Remplacement de serrure et cylindre toutes marques à Paris. Installation serrure haute sécurité A2P *, ** et ***. Devis gratuit, garantie pièces et main d'œuvre."
+                title="Changement de Serrure Viry-Châtillon - Installation A2P & Multipoints"
+                description="Remplacement de serrure et cylindre toutes marques à Viry-Châtillon. Installation serrure haute sécurité A2P *, ** et ***. Devis gratuit, garantie pièces et main d'œuvre."
                 jsonLd={[schema]}
             />
 
@@ -162,7 +162,7 @@ const LockChange: React.FC = () => {
                                     className="inline-flex items-center space-x-2 bg-orange-600 hover:bg-orange-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-200 hover:shadow-lg"
                                 >
                                     <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                                    <span>01 23 45 67 89</span>
+                                    <span>01 85 09 73 65</span>
                                 </MagneticButton>
                                 <Link
                                     to="/contact"
@@ -378,7 +378,7 @@ const LockChange: React.FC = () => {
                                 className="inline-flex items-center space-x-2 bg-white text-gray-900 px-6 sm:px-10 py-3 sm:py-4 rounded-lg font-bold text-lg sm:text-xl hover:bg-gray-100 transition-all duration-200 hover:shadow-lg"
                             >
                                 <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
-                                <span>01 23 45 67 89</span>
+                                <span>01 85 09 73 65</span>
                             </MagneticButton>
                             <Link
                                 to="/contact"

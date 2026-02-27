@@ -41,8 +41,8 @@ const Pricing: React.FC = () => {
     return (
         <>
             <SEO
-                title="Tarifs Serrurier Paris - Prix Transparents 2025"
-                description="Découvrez nos tarifs transparents de serrurerie à Paris : ouverture de porte dès 39€, changement de serrure, blindage. Devis gratuit, agréé assurances."
+                title="Tarifs Serrurier Viry-Châtillon - Prix Transparents 2025"
+                description="Découvrez nos tarifs transparents de serrurerie à Viry-Châtillon : ouverture de porte dès 39€, changement de serrure, blindage. Devis gratuit, agréé assurances."
             />
 
             <div className="pt-20 bg-gray-50">
@@ -50,7 +50,7 @@ const Pricing: React.FC = () => {
                 <section className="relative bg-gradient-to-r from-orange-600 to-red-600 text-white py-20">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
-                            Tarifs Transparents - Serrurerie Paris
+                            Tarifs Transparents - Serrurerie Viry-Châtillon
                         </h1>
                         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
                             Prix fixes, devis gratuit, aucune surprise. Agréé assurances.

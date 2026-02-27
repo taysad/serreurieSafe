@@ -84,7 +84,7 @@ const AfterBurglary: React.FC = () => {
     return (
         <div className="pt-20">
             <SEO
-                title="Dépannage Après Cambriolage Paris - Mise en Sécurité Urgente"
+                title="Dépannage Après Cambriolage Viry-Châtillon - Mise en Sécurité Urgente"
                 description="Intervention serrurier urgence après effraction ou tentative de cambriolage. Fermeture provisoire, remplacement serrure, devis assurance. 24h/24 7j/7."
                 jsonLd={[schema]}
             />
@@ -143,7 +143,7 @@ const AfterBurglary: React.FC = () => {
                                     className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-200 hover:shadow-lg animate-pulse"
                                 >
                                     <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                                    <span>01 23 45 67 89</span>
+                                    <span>01 85 09 73 65</span>
                                 </MagneticButton>
                                 <Link
                                     to="/contact"
@@ -359,7 +359,7 @@ const AfterBurglary: React.FC = () => {
                                 className="inline-flex items-center space-x-2 bg-white text-gray-900 px-6 sm:px-10 py-3 sm:py-4 rounded-lg font-bold text-lg sm:text-xl hover:bg-gray-100 transition-all duration-200 hover:shadow-lg"
                             >
                                 <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
-                                <span>01 23 45 67 89</span>
+                                <span>01 85 09 73 65</span>
                             </MagneticButton>
                         </div>
                     </motion.div>

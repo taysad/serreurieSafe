@@ -6,7 +6,7 @@ import { contactInfo } from '../../config/seo';
 
 const LandingPageCity: React.FC = () => {
     const { city } = useParams<{ city: string }>();
-    const cityName = city ? city.charAt(0).toUpperCase() + city.slice(1) : 'Paris';
+    const cityName = city ? city.charAt(0).toUpperCase() + city.slice(1) : 'Viry-Châtillon';
 
     // Conversion tracking placeholder
     const handleCallClick = () => {

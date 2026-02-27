@@ -159,7 +159,7 @@ const NavigationAssistant: React.FC = () => {
       switch (type) {
         case "emergency":
           response =
-            "🚨 **Intervention d'urgence disponible 24h/24 !**\n\n• Temps d'intervention : < 30 minutes\n• Devis gratuit\n• Équipe mobile certifiée\n• Paiement sécurisé\n\nAppelez-nous immédiatement au **01 23 45 67 89**";
+            "🚨 **Intervention d'urgence disponible 24h/24 !**\n\n• Temps d'intervention : < 30 minutes\n• Devis gratuit\n• Équipe mobile certifiée\n• Paiement sécurisé\n\nAppelez-nous immédiatement au **01 85 09 73 65**";
           suggestions = [
             "Appeler maintenant",
             "Demander un devis",
@@ -188,13 +188,13 @@ const NavigationAssistant: React.FC = () => {
 
         case "location":
           response =
-            "📍 **Zone d'intervention :**\n\n• Paris et banlieue (75, 92, 93, 94)\n• Temps d'intervention : 15-45 min\n• Équipes mobiles 24h/24\n• Service client réactif";
+            "📍 **Zone d'intervention :**\n\n• Viry-Châtillon et banlieue (75, 91, 92, 93)\n• Temps d'intervention : 15-45 min\n• Équipes mobiles 24h/24\n• Service client réactif";
           suggestions = ["Voir la carte", "Calculer le temps", "Prendre RDV"];
           break;
 
         case "appointment":
           response =
-            "📅 **Prendre rendez-vous :**\n\n• **Urgence** : Appelez le 01 23 45 67 89\n• **Programmé** : Formulaire en ligne\n• **Devis gratuit** : Sans engagement\n• **Disponibilité** : 7j/7, 24h/24";
+            "📅 **Prendre rendez-vous :**\n\n• **Urgence** : Appelez le 01 85 09 73 65\n• **Programmé** : Formulaire en ligne\n• **Devis gratuit** : Sans engagement\n• **Disponibilité** : 7j/7, 24h/24";
           suggestions = [
             "Appeler maintenant",
             "Formulaire RDV",

@@ -27,7 +27,7 @@ const VirtualBusinessCard: React.FC = () => {
     name: "Tayeb sad",
     title: "Technicien Certifié A2P",
     company: "Serrure Safe",
-    phone: "+33 07 83 86 76 50",
+    phone: "+33 1 85 09 73 65",
     email: "contact@serruresafe.fr",
     website: "https://serruresafe.fr/",
     address: "7 allée de Dijon 91170 viry-Châtillon ",

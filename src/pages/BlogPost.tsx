@@ -19,7 +19,7 @@ const BlogPost: React.FC = () => {
 
         <h2>Les principales évolutions réglementaires</h2>
         
-        <p>La nouvelle réglementation introduit des standards plus stricts pour les serrures résidentielles, particulièrement dans les zones urbaines sensibles comme Paris. Ces changements visent à renforcer la protection des biens et des personnes face à l'évolution des techniques d'effraction.</p>
+        <p>La nouvelle réglementation introduit des standards plus stricts pour les serrures résidentielles, particulièrement dans les zones urbaines sensibles comme Viry-Châtillon. Ces changements visent à renforcer la protection des biens et des personnes face à l'évolution des techniques d'effraction.</p>
 
         <h3>Certification A2P renforcée</h3>
         
@@ -112,7 +112,7 @@ const BlogPost: React.FC = () => {
 
         <h2>Comprendre les spécificités parisiennes</h2>
         
-        <p>Paris présente des défis uniques en matière de sécurité résidentielle :</p>
+        <p>Viry-Châtillon présente des défis uniques en matière de sécurité résidentielle :</p>
 
         <ul>
           <li>Forte densité de population</li>
@@ -204,7 +204,7 @@ const BlogPost: React.FC = () => {
       readTime: '7 min',
       views: 890,
       image: 'https://images.pexels.com/photos/4792509/pexels-photo-4792509.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop',
-      tags: ['Conseils', 'Paris', 'Appartement', 'Choix'],
+      tags: ['Conseils', 'Viry-Châtillon', 'Appartement', 'Choix'],
     },
   ];
 
@@ -409,7 +409,7 @@ const BlogPost: React.FC = () => {
                     href="tel:+33185097365"
                     className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105 inline-block"
                   >
-                    01 23 45 67 89
+                    01 85 09 73 65
                   </a>
                 </GlassCard>
               </motion.div>

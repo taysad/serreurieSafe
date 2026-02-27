@@ -15,10 +15,10 @@ const resources = {
       'nav.contact': 'Contact',
       
       // Hero Section
-      'hero.title': 'Serrurier à Paris',
+      'hero.title': 'Serrurier à Viry-Châtillon',
       'hero.subtitle': 'Le réflexe sécurité',
-      'hero.description': 'Expert en serrurerie et sécurisation depuis 15 ans. Intervention rapide 24h/24 pour tous vos besoins de sécurité à Paris et en Île-de-France.',
-      'hero.cta.call': '01 23 45 67 89',
+      'hero.description': 'Expert en serrurerie et sécurisation depuis 15 ans. Intervention rapide 24h/24 pour tous vos besoins de sécurité en Essonne et en Île-de-France.',
+      'hero.cta.call': '01 85 09 73 65',
       'hero.cta.services': 'Nos Services',
       
       // Services
@@ -31,7 +31,7 @@ const resources = {
       
       // Emergency
       'emergency.title': 'Urgence 24h/24',
-      'emergency.subtitle': 'Intervention rapide sur Paris et banlieue',
+      'emergency.subtitle': 'Intervention rapide sur Viry-Châtillon et banlieue',
       'emergency.call_now': 'Appeler maintenant',
       'emergency.average_time': 'Temps d\'intervention moyen',
       'emergency.less_than_30min': '< 30 minutes',
@@ -54,7 +54,7 @@ const resources = {
       'common.quote': 'Devis gratuit',
       'common.emergency': 'Urgence',
       'common.available_24_7': 'Disponible 24h/24 - 7j/7',
-      'common.paris_area': 'Paris et Île-de-France',
+      'common.paris_area': 'Essonne et Île-de-France',
       'common.free_quote': 'Devis gratuit',
       'common.certified': 'Certifié A2P',
       'common.experience': 'ans d\'expérience',
@@ -74,10 +74,10 @@ const resources = {
       'nav.contact': 'Contact',
       
       // Hero Section
-      'hero.title': 'Locksmith in Paris',
+      'hero.title': 'Locksmith in Viry-Châtillon',
       'hero.subtitle': 'Your security reflex',
-      'hero.description': 'Expert in locksmithing and security for 15 years. Fast 24/7 intervention for all your security needs in Paris and Île-de-France.',
-      'hero.cta.call': '01 23 45 67 89',
+      'hero.description': 'Expert in locksmithing and security for 15 years. Fast 24/7 intervention for all your security needs in Viry-Châtillon and Île-de-France.',
+      'hero.cta.call': '01 85 09 73 65',
       'hero.cta.services': 'Our Services',
       
       // Services
@@ -90,7 +90,7 @@ const resources = {
       
       // Emergency
       'emergency.title': 'Emergency 24/7',
-      'emergency.subtitle': 'Fast intervention in Paris and suburbs',
+      'emergency.subtitle': 'Fast intervention in Viry-Châtillon and suburbs',
       'emergency.call_now': 'Call now',
       'emergency.average_time': 'Average intervention time',
       'emergency.less_than_30min': '< 30 minutes',
@@ -113,7 +113,7 @@ const resources = {
       'common.quote': 'Free quote',
       'common.emergency': 'Emergency',
       'common.available_24_7': 'Available 24/7',
-      'common.paris_area': 'Paris and Île-de-France',
+      'common.paris_area': 'Viry-Châtillon and Île-de-France',
       'common.free_quote': 'Free quote',
       'common.certified': 'A2P Certified',
       'common.experience': 'years of experience',

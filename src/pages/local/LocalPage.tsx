@@ -6,20 +6,12 @@ import { contactInfo } from '../../config/seo';
 
 // This would ideally come from a CMS or a data file
 const cityData: Record<string, { name: string; zip: string; description: string }> = {
-    'paris-1': { name: 'Paris 1er', zip: '75001', description: 'Intervention rapide près du Louvre et Châtelet.' },
-    'paris-2': { name: 'Paris 2ème', zip: '75002', description: 'Serrurier expert Bourse et Sentier.' },
-    // ... add more districts
-    'boulogne': { name: 'Boulogne-Billancourt', zip: '92100', description: 'Dépannage serrurerie à Boulogne.' },
-    'creteil': { name: 'Créteil', zip: '94000', description: 'Serrurier urgence Créteil (Préfecture, Mont-Mesly, Échat).' },
-    'maisons-alfort': { name: 'Maisons-Alfort', zip: '94700', description: 'Intervention 30 min Maisons-Alfort, Stade, Charentonneau.' },
-    'saint-maur': { name: 'Saint-Maur-des-Fossés', zip: '94100', description: 'Artisan serrurier Saint-Maur, La Varenne, Le Parc.' },
-    'vitry': { name: 'Vitry-sur-Seine', zip: '94400', description: 'Dépannage serrurerie Vitry-sur-Seine jour et nuit.' },
-    'viry-chatillon': { name: 'Viry-Châtillon', zip: '91170', description: 'Serrurier expert à Viry-Châtillon, intervention rapide quartier Lac et Centre.' },
+    'viry-chatillon': { name: 'Viry-Châtillon', zip: '91170', description: 'Serrurier expert à Viry-Châtillon, intervention rapide.' },
     'juvisy': { name: 'Juvisy-sur-Orge', zip: '91260', description: 'Dépannage serrurerie Juvisy, proche gare et centre-ville.' },
     'savigny': { name: 'Savigny-sur-Orge', zip: '91600', description: 'Artisan serrurier Savigny-sur-Orge, disponible 24h/24.' },
-    'ris-orangis': { name: 'Ris-Orangis', zip: '91130', description: 'Intervention urgence Ris-Orangis, quartier de la Ferme et Plateau.' },
-    'morsang': { name: 'Morsang-sur-Orge', zip: '91390', description: 'Serrurier Morsang-sur-Orge, sécurisation après effraction.' },
-    'ste-genevieve': { name: 'Sainte Geneviève des Bois', zip: '91700', description: 'Dépannage serrurier Ste-Geneviève, quartier de la Gare et Donjon.' },
+    'ris-orangis': { name: 'Ris-Orangis', zip: '91130', description: 'Intervention urgence Ris-Orangis.' },
+    'morsang': { name: 'Morsang-sur-Orge', zip: '91390', description: 'Serrurier Morsang-sur-Orge, sécurisation.' },
+    'ste-genevieve': { name: 'Sainte Geneviève des Bois', zip: '91700', description: 'Dépannage serrurier Ste-Geneviève.' },
     'draveil': { name: 'Draveil', zip: '91210', description: 'Expert serrurerie Draveil, intervention 30 min.' },
     'fleury': { name: 'Fleury Mérogis', zip: '91700', description: 'Artisan serrurier Fleury-Mérogis, devis gratuit.' },
     'athis-mons': { name: 'Athis-Mons', zip: '91200', description: 'Serrurier Athis-Mons, ouverture de porte et blindage.' },
@@ -30,9 +22,9 @@ const cityData: Record<string, { name: string; zip: string; description: string 
 const LocalPage: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
     const city = cityData[slug || ''] || {
-        name: 'Paris',
+        name: 'Viry-Châtillon',
         zip: '75000',
-        description: 'Intervention rapide dans tout Paris et Île-de-France.'
+        description: 'Intervention rapide dans tout Essonne et Île-de-France.'
     };
 
     const title = `Serrurier ${city.name} (${city.zip}) - Dépannage Urgence 30 min`;
@@ -78,7 +70,7 @@ const LocalPage: React.FC = () => {
                 {/* Hero Local */}
                 <div className="bg-gray-900 text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
                     <div className="absolute inset-0 opacity-30">
-                        <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Paris" className="w-full h-full object-cover" />
+                        <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Viry-Châtillon" className="w-full h-full object-cover" />
                     </div>
                     <div className="relative max-w-7xl mx-auto text-center">
                         <h1 className="text-3xl md:text-5xl font-extrabold mb-4">
@@ -154,11 +146,16 @@ const LocalPage: React.FC = () => {
                         <h3 className="text-lg font-bold text-gray-900 mb-4">Zones d'intervention proches</h3>
                         <div className="flex flex-wrap gap-4">
                             <Link to="/serrurier-viry-chatillon" className="text-orange-600 hover:underline">Viry-Châtillon</Link>
-                            <Link to="/serrurier-juvisy" className="text-orange-600 hover:underline">Juvisy</Link>
-                            <Link to="/serrurier-savigny" className="text-orange-600 hover:underline">Savigny</Link>
+                            <Link to="/serrurier-juvisy" className="text-orange-600 hover:underline">Juvisy-sur-Orge</Link>
+                            <Link to="/serrurier-savigny" className="text-orange-600 hover:underline">Savigny-sur-Orge</Link>
                             <Link to="/serrurier-ris-orangis" className="text-orange-600 hover:underline">Ris-Orangis</Link>
+                            <Link to="/serrurier-morsang" className="text-orange-600 hover:underline">Morsang-sur-Orge</Link>
+                            <Link to="/serrurier-ste-genevieve" className="text-orange-600 hover:underline">Sainte Geneviève des Bois</Link>
+                            <Link to="/serrurier-draveil" className="text-orange-600 hover:underline">Draveil</Link>
+                            <Link to="/serrurier-fleury" className="text-orange-600 hover:underline">Fleury Mérogis</Link>
+                            <Link to="/serrurier-athis-mons" className="text-orange-600 hover:underline">Athis-Mons</Link>
                             <Link to="/serrurier-essonne" className="text-orange-600 hover:underline">Essonne (91)</Link>
-                            {/* Add more links dynamically */}
+                            <Link to="/serrurier-ile-de-france" className="text-orange-600 hover:underline">Île-de-France</Link>
                         </div>
                     </div>
                 </div>

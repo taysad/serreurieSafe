@@ -38,7 +38,7 @@ const IntelligentSearch: React.FC = () => {
     },
     {
       id: '3',
-      title: 'Intervention Paris',
+      title: 'Intervention Viry-Châtillon',
       description: 'Zone d\'intervention et délais',
       category: 'info',
       url: '/contact',

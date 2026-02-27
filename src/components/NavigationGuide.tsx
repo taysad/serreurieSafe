@@ -36,7 +36,7 @@ const NavigationGuide: React.FC<NavigationGuideProps> = ({
     {
       id: 0,
       title: "Bienvenue sur Serrure Safe",
-      subtitle: "Votre expert en sécurité à Paris",
+      subtitle: "Votre expert en sécurité à Viry-Châtillon",
       content:
         "Découvrez nos services professionnels de serrurerie et dépannage 24h/24.",
       icon: Shield,
@@ -252,7 +252,7 @@ const NavigationGuide: React.FC<NavigationGuideProps> = ({
                     className="mt-4 space-y-2"
                   >
                     <MagneticButton
-                      href="tel:+331 85 09 73 65
+                      href="tel:+33185097365
 "
                       className="w-full flex items-center space-x-3 p-3 bg-red-50 text-red-700 rounded-lg hover:bg-red-100 transition-colors"
                     >

@@ -14,7 +14,7 @@ export const blogArticles = [
     content: `
       <p>La réglementation française en matière de serrurerie évolue constamment pour s'adapter aux nouvelles menaces et technologies. En 2024, plusieurs changements importants entrent en vigueur, impactant directement la sécurité de votre domicile.</p>
       <h2>Les principales évolutions réglementaires</h2>
-      <p>La nouvelle réglementation introduit des standards plus stricts pour les serrures résidentielles, particulièrement dans les zones urbaines sensibles comme Paris.</p>
+      <p>La nouvelle réglementation introduit des standards plus stricts pour les serrures résidentielles, particulièrement dans les zones urbaines sensibles comme Viry-Châtillon.</p>
       <h3>Certification A2P renforcée</h3>
       <p>La certification A2P (Assurance Prévention Protection) devient plus exigeante avec de nouveaux tests de résistance.</p>
       <ul>

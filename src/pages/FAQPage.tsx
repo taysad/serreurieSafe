@@ -10,13 +10,13 @@ const FAQPage: React.FC = () => {
 
     const faqs = [
         {
-            question: "Quel est le tarif d'un serrurier d'urgence à Créteil et alentours ?",
+            question: "Quel est le tarif d'un serrurier d'urgence dans l'Essonne et alentours ?",
             answer: "Nos tarifs commencent à 89€ pour une ouverture de porte claquée en journée. Ce prix inclut le déplacement et la main-d'œuvre. Pour une intervention de nuit, un weekend ou un jour férié, une majoration peut s'appliquer. Nous vous communiquons toujours une estimation ferme par téléphone avant notre départ.",
             icon: CreditCard
         },
         {
-            question: "En combien de temps intervenez-vous dans le 94 ?",
-            answer: "Grâce à notre équipe locale basée à Créteil, nous intervenons en moyenne sous 30 minutes sur Saint-Maur-des-Fossés, Maisons-Alfort, Vitry-sur-Seine et Bonneuil. En fonction du trafic, ce délai peut varier légèrement mais nous vous tenons informé en temps réel.",
+            question: "En combien de temps intervenez-vous dans le 91 ?",
+            answer: "Grâce à notre équipe locale, nous intervenons en moyenne sous 30 minutes sur Viry-Châtillon, Juvisy-sur-Orge, Savigny-sur-Orge et Ris-Orangis. En fonction du trafic, ce délai peut varier légèrement mais nous vous tenons informé en temps réel.",
             icon: Clock
         },
         {
@@ -36,7 +36,7 @@ const FAQPage: React.FC = () => {
         },
         {
             question: "Intervenez-vous pour les rideaux métalliques de commerces ?",
-            answer: "Oui, nous proposons un service de dépannage pour les commerçants : déblocage de rideaux métalliques, réparation de moteurs, et changement de serrures de sécurité pour devantures de magasins dans tout le Val-de-Marne.",
+            answer: "Oui, nous proposons un service de dépannage pour les commerçants : déblocage de rideaux métalliques, réparation de moteurs, et changement de serrures de sécurité pour devantures de magasins dans toute l'Essonne.",
             icon: Wrench
         }
     ];
@@ -57,8 +57,8 @@ const FAQPage: React.FC = () => {
     return (
         <div className="pt-24 bg-gray-50 min-h-screen font-sans">
             <SEO
-                title="FAQ Serrurier 94 - Vos Questions sur nos Interventions et Tarifs"
-                description="Retrouvez toutes les réponses à vos questions : tarifs, délais d'intervention à Créteil, remboursement assurance, certifications A2P et conseils de sécurité."
+                title="FAQ Serrurier 91 - Vos Questions sur nos Interventions et Tarifs"
+                description="Retrouvez toutes les réponses à vos questions : tarifs, délais d'intervention en Essonne, remboursement assurance, certifications A2P et conseils de sécurité."
                 jsonLd={[faqSchema]}
             />
 

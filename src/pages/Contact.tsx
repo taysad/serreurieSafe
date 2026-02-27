@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
     {
       icon: MapPin,
       title: "Zone d'intervention",
-      details: "Paris & Île-de-France",
+      details: "Essonne & Île-de-France",
       subtitle: "Déplacement gratuit",
       action: null,
       image:
@@ -147,7 +147,7 @@ const Contact: React.FC = () => {
               <span className="text-orange-400">Serrure Safe</span>
             </h1>
             <p className="text-lg text-gray-200 mb-8">
-              Intervention rapide 24h/24 et 7j/7 à Paris et en Île-de-France.
+              Intervention rapide 24h/24 et 7j/7 en Essonne et Île-de-France.
               Obtenez un devis gratuit en quelques clics.
             </p>
             <a
@@ -324,7 +324,7 @@ const Contact: React.FC = () => {
         >
           <div className="overflow-hidden rounded-2xl shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.94722687195!2d2.277020999999999!3d48.8588897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1635789012345"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.94722687195!2d2.277020999999999!3d48.8588897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sViry-Ch%C3%A2tillon!5e0!3m2!1sfr!2sfr!4v1635789012345"
               width="100%"
               height="380"
               loading="lazy"
