@@ -39,7 +39,7 @@ const Emergency: React.FC = () => {
       icon: Shield,
     },
     {
-      title: "Disponible 24h/24",
+      title: "Disponible 24h/24 - 7j/7",
       description: "Service d'urgence tous les jours",
       icon: Clock,
     },
@@ -59,15 +59,11 @@ const Emergency: React.FC = () => {
       image: "OIP (10).jpeg",
     },
     {
-      name: "Saint-Denis",
-      image: "basilica-saint-denis-photo.webp",
-    },
-    {
-      name: "Versailles",
+      name: "Sainte-Geneviève-des-Bois",
       image: "OIP (9).jpeg",
     },
     {
-      name: "Neuilly-sur-Seine",
+      name: "Ris-Orangis",
       image: "neuilly-sur-seine.jpg",
     },
   ];
@@ -102,7 +98,7 @@ const Emergency: React.FC = () => {
 
   return (
     <>
-      <title>Urgence Serrurerie 24h/24 Partout en Île-de-France - Dépannage rapide</title>
+      <title>Urgence Serrurerie 24h/24 - 7j/7 Partout en Essonne - Dépannage rapide</title>
       <meta
         name="description"
         content="Serrurier Viry-Châtillon urgence 24h/24 - Intervention rapide en moins de 30 min. Ouverture de porte, serrure cassée, effraction. Devis clair et sans casse."
