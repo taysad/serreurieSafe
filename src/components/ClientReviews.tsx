@@ -8,6 +8,7 @@ import {
   ChevronLeft,
   ChevronRight,
   CheckCircle,
+  BadgeCheck,
 } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
@@ -38,7 +39,7 @@ const ClientReviews: React.FC = () => {
         "Service exceptionnel ! Intervention en 20 minutes, technicien très professionnel. Je recommande vivement.",
       verified: true,
       helpful: 12,
-      location: "Viry-Châtillon 15ème",
+      location: "Viry-Châtillon",
     },
     {
       id: "2",
@@ -50,7 +51,7 @@ const ClientReviews: React.FC = () => {
         "Installation parfaite d'une serrure haute sécurité. Travail soigné et conseils précieux. Merci !",
       verified: true,
       helpful: 8,
-      location: "Boulogne-Billancourt",
+      location: "Savigny-sur-Orge",
     },
     {
       id: "3",
@@ -62,7 +63,7 @@ const ClientReviews: React.FC = () => {
         "Bloquée dehors à 23h, ils sont arrivés en 15 minutes ! Service client au top, prix raisonnable.",
       verified: true,
       helpful: 15,
-      location: "Viry-Châtillon 11ème",
+      location: "Viry-Châtillon",
     },
   ];
 
@@ -71,11 +72,10 @@ const ClientReviews: React.FC = () => {
       {[...Array(5)].map((_, i) => (
         <Star
           key={i}
-          className={`w-4 h-4 ${
-            i < rating
-              ? "text-yellow-400 drop-shadow-[0_0_6px_rgba(255,255,0,0.6)]"
-              : "text-gray-400"
-          }`}
+          className={`w-4 h-4 ${i < rating
+            ? "text-yellow-400 drop-shadow-[0_0_6px_rgba(255,255,0,0.6)]"
+            : "text-gray-400"
+            }`}
         />
       ))}
     </div>
@@ -103,7 +103,7 @@ const ClientReviews: React.FC = () => {
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 text-center">
               Plus de 200 clients satisfaits nous recommandent 🔐
             </p>
-            
+
             {/* Badge Google Trust */}
             <a
               href="https://share.google/YzvsPqkbP6xX6bojc"
@@ -111,20 +111,23 @@ const ClientReviews: React.FC = () => {
               rel="noopener noreferrer"
               className="flex items-center space-x-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md rounded-2xl px-6 py-4 hover:shadow-lg hover:border-blue-400 transition-all hover:scale-105"
             >
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" 
-                alt="Google" 
-                className="w-12 h-12"
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+                alt="Google"
+                className="w-12 h-12 flex-shrink-0"
               />
               <div className="flex flex-col text-left">
                 <span className="text-lg font-extrabold text-gray-900 dark:text-white leading-tight">⭐ 4,9/5 sur Google</span>
-                <span className="text-sm font-medium text-gray-500 dark:text-gray-400 mt-1">
-                  +200 avis clients
-                </span>
+                <div className="flex items-center space-x-1 mt-1">
+                  <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    +52 avis clients
+                  </span>
+                  <BadgeCheck className="w-4 h-4 text-blue-500 fill-blue-100 dark:fill-blue-900" />
+                </div>
               </div>
               <div className="ml-3 border-l border-gray-200 dark:border-gray-600 pl-5 flex items-center h-full">
-                <span className="text-base font-bold text-blue-600 dark:text-blue-400 underline-offset-2 hover:underline">
-                  Voir nos avis Google
+                <span className="text-base font-bold text-blue-600 dark:text-blue-400 underline-offset-2 hover:underline whitespace-nowrap">
+                  Voir nos avis
                 </span>
               </div>
             </a>

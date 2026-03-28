@@ -9,6 +9,7 @@ import {
   ArrowRight,
   Award,
   Users,
+  BadgeCheck,
 } from "lucide-react";
 
 import ImmersiveServices from "../components/ImmersiveServices";
@@ -90,19 +91,19 @@ const ResponsiveHome: React.FC = () => {
               Expert certifié A2P avec plus de 15 ans d'expérience.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <a
                 href="tel:+33185097365"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FF6B00] to-[#FF3C00] text-white px-6 py-2.5 rounded-lg font-bold text-lg shadow hover:shadow-lg transition-all"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FF6B00] to-[#FF3C00] text-white px-5 sm:px-6 py-2.5 rounded-lg font-bold text-sm sm:text-base shadow hover:shadow-lg transition-all whitespace-nowrap"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-5 h-5 flex-shrink-0" />
                 <span>01 85 09 73 65</span>
               </a>
               <a
                 href="tel:+33783867650"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FF6B00] to-[#FF3C00] text-white px-6 py-2.5 rounded-lg font-bold text-lg shadow hover:shadow-lg transition-all"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FF6B00] to-[#FF3C00] text-white px-5 sm:px-6 py-2.5 rounded-lg font-bold text-sm sm:text-base shadow hover:shadow-lg transition-all whitespace-nowrap"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-5 h-5 flex-shrink-0" />
                 <span>07 83 86 76 50</span>
               </a>
               {/* 🔹 Nouveau bouton WhatsApp */}
@@ -110,11 +111,11 @@ const ResponsiveHome: React.FC = () => {
                 href="https://wa.me/33783867650"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-2.5 rounded-lg font-bold text-lg shadow hover:shadow-lg transition-all"
+                className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 sm:px-6 py-2.5 rounded-lg font-bold text-sm sm:text-base shadow hover:shadow-lg transition-all whitespace-nowrap"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
+                  className="w-5 h-5 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -125,10 +126,10 @@ const ResponsiveHome: React.FC = () => {
 
               <Link
                 to="/services"
-                className="inline-flex items-center justify-center gap-2 border-2 border-[#FF6B00] text-[#FF6B00] hover:bg-[#FF6B00] hover:text-white px-6 py-2.5 rounded-lg font-bold text-lg transition-all"
+                className="inline-flex items-center justify-center gap-2 border-2 border-[#FF6B00] text-[#FF6B00] hover:bg-[#FF6B00] hover:text-white px-5 sm:px-6 py-2.5 rounded-lg font-bold text-sm sm:text-base transition-all whitespace-nowrap"
               >
                 <span>Nos Services</span>
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-5 h-5 flex-shrink-0" />
               </Link>
             </div>
 
@@ -138,22 +139,25 @@ const ResponsiveHome: React.FC = () => {
                 href="https://share.google/YzvsPqkbP6xX6bojc"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-md border border-gray-200 dark:border-gray-700 shadow-md rounded-2xl px-5 py-3 hover:shadow-lg hover:border-blue-400 transition-all hover:scale-105"
+                className="flex items-center space-x-3 sm:space-x-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-md border border-gray-200 dark:border-gray-700 shadow-md rounded-2xl px-4 sm:px-5 py-3 hover:shadow-lg hover:border-blue-400 transition-all hover:scale-105"
               >
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" 
                   alt="Google" 
-                  className="w-10 h-10"
+                  className="w-10 h-10 flex-shrink-0"
                 />
                 <div className="flex flex-col text-left">
-                  <span className="text-base font-extrabold text-gray-900 dark:text-white leading-tight">⭐ 4,9/5 sur Google</span>
-                  <span className="text-sm font-medium text-gray-500 dark:text-gray-400 mt-0.5">
-                    +200 avis clients
-                  </span>
+                  <span className="text-sm sm:text-base font-extrabold text-gray-900 dark:text-white leading-tight">⭐ 4,9/5 sur Google</span>
+                  <div className="flex items-center space-x-1 mt-0.5">
+                    <span className="text-xs sm:text-sm font-medium text-gray-500 dark:text-gray-400">
+                      +52 avis clients
+                    </span>
+                    <BadgeCheck className="w-4 h-4 text-blue-500 fill-blue-100 dark:fill-blue-900" />
+                  </div>
                 </div>
-                <div className="ml-2 border-l border-gray-200 dark:border-gray-600 pl-4 flex items-center h-full">
-                  <span className="text-sm font-bold text-blue-600 dark:text-blue-400 underline-offset-2 hover:underline">
-                    Voir nos avis Google
+                <div className="ml-2 border-l border-gray-200 dark:border-gray-600 pl-3 sm:pl-4 flex items-center h-full">
+                  <span className="text-xs sm:text-sm font-bold text-blue-600 dark:text-blue-400 underline-offset-2 hover:underline whitespace-nowrap">
+                    Voir nos avis
                   </span>
                 </div>
               </a>

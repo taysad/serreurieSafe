@@ -26,7 +26,7 @@ const steps = [
     icon: MapPin,
     title: "Déplacement sur site",
     description:
-      "Nos techniciens se déplacent dans toute la région parisienne, avec un suivi en temps réel de leur arrivée.",
+      "Nos techniciens se déplacent dans le département de l’Essonne, avec un suivi en temps réel de leur arrivée.",
     image: "IMG-20251021-WA0002.jpg",
   },
   {
@@ -78,17 +78,15 @@ const InterventionProcess: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: index * 0.15 }}
                   viewport={{ once: true }}
-                  className={`flex flex-col sm:flex-row items-center justify-between w-full relative ${
-                    isLeft ? "sm:flex-row" : "sm:flex-row-reverse"
-                  }`}
+                  className={`flex flex-col sm:flex-row items-center justify-between w-full relative ${isLeft ? "sm:flex-row" : "sm:flex-row-reverse"
+                    }`}
                 >
                   {/* === Carte avec image de fond === */}
                   <div
-                    className={`w-full sm:w-[45%] relative rounded-2xl overflow-hidden shadow-2xl ${
-                      isLeft
+                    className={`w-full sm:w-[45%] relative rounded-2xl overflow-hidden shadow-2xl ${isLeft
                         ? "sm:text-right text-center"
                         : "sm:text-left text-center"
-                    }`}
+                      }`}
                   >
                     <img
                       src={step.image}

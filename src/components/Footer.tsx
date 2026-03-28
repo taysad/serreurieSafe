@@ -16,6 +16,7 @@ import {
   Facebook,
   Instagram,
   Music2,
+  BadgeCheck,
 } from "lucide-react";
 
 const Footer: React.FC = () => {
@@ -169,17 +170,20 @@ const Footer: React.FC = () => {
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" 
                   alt="Google" 
-                  className="w-8 h-8 ml-1"
+                  className="w-8 h-8 ml-1 flex-shrink-0"
                 />
                 <div className="flex flex-col text-left ml-1">
                   <span className="text-sm font-extrabold text-gray-900 leading-tight">⭐ 4,9/5 sur Google</span>
-                  <span className="text-xs font-medium text-gray-600 mt-0.5">
-                    +200 avis clients
-                  </span>
+                  <div className="flex items-center space-x-1 mt-0.5">
+                    <span className="text-xs font-medium text-gray-600">
+                      +52 avis clients
+                    </span>
+                    <BadgeCheck className="w-3.5 h-3.5 text-blue-500 fill-blue-100" />
+                  </div>
                 </div>
                 <div className="ml-2 border-l border-gray-300 pl-3 flex items-center h-full">
-                  <span className="text-xs font-bold text-blue-600 hover:underline">
-                    Voir nos avis Google
+                  <span className="text-xs font-bold text-blue-600 hover:underline whitespace-nowrap">
+                    Voir nos avis
                   </span>
                 </div>
               </a>
