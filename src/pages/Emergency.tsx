@@ -127,7 +127,7 @@ const Emergency: React.FC = () => {
             className="relative z-10 text-white px-6 sm:px-8 max-w-4xl mx-auto"
           >
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-4 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent drop-shadow-lg leading-tight">
-              Serrurier d’Urgence 24h/24 Île-de-France
+              Serrurier d’Urgence 24h/24 - 7j/7 Essonne
             </h1>
 
             <p className="text-lg sm:text-xl md:text-2xl mb-10 text-gray-200 font-light">
@@ -136,7 +136,7 @@ const Emergency: React.FC = () => {
               </span>{" "}
               — Porte bloquée, serrure cassée ou effraction ? Intervention en{" "}
               <span className="font-semibold text-orange-400">30 minutes</span>{" "}
-              partout à Île-de-France et en banlieue.
+              partout en Essonne.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -172,7 +172,7 @@ const Emergency: React.FC = () => {
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Nos serruriers professionnels interviennent rapidement dans tout
-              Viry-Châtillon et ses environs. Cliquez sur une zone pour plus de détails.
+              Essonne et ses environs. Cliquez sur une zone pour plus de détails.
             </p>
           </div>
 
