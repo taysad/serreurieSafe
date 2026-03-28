@@ -47,15 +47,15 @@ const Emergency: React.FC = () => {
 
   const interventionZones = [
     {
-      name: "Viry-Châtillon 1er",
+      name: "Viry-Châtillon",
       image: "arrondissement-paris-1068x601.jpg",
     },
     {
-      name: "Viry-Châtillon 8e",
+      name: "Savigny-sur-Orge",
       image: "bb2fda69b8bb647d0e617a9531ce3e41.avif",
     },
     {
-      name: "Boulogne-Billancourt",
+      name: "Juvisy-sur-Orge",
       image: "OIP (10).jpeg",
     },
     {
