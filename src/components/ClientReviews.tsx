@@ -109,24 +109,24 @@ const ClientReviews: React.FC = () => {
               href="https://share.google/YzvsPqkbP6xX6bojc"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md rounded-full px-6 py-3 hover:shadow-lg transition-all hover:scale-105"
+              className="flex items-center space-x-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md rounded-2xl px-6 py-4 hover:shadow-lg hover:border-blue-400 transition-all hover:scale-105"
             >
               <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" 
                 alt="Google" 
-                className="w-6 h-6"
+                className="w-12 h-12"
               />
               <div className="flex flex-col text-left">
-                <span className="text-sm font-bold text-gray-900 dark:text-white leading-tight">Excellent 5.0/5 sur Google</span>
-                <div className="flex space-x-1 mt-0.5">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 text-yellow-500 fill-yellow-500" />
-                  ))}
-                </div>
+                <span className="text-lg font-extrabold text-gray-900 dark:text-white leading-tight">⭐ 4,9/5 sur Google</span>
+                <span className="text-sm font-medium text-gray-500 dark:text-gray-400 mt-1">
+                  +200 avis clients
+                </span>
               </div>
-              <span className="text-sm font-medium text-gray-500 dark:text-gray-400 ml-2 border-l border-gray-300 dark:border-gray-600 pl-3">
-                Voir notre fiche
-              </span>
+              <div className="ml-3 border-l border-gray-200 dark:border-gray-600 pl-5 flex items-center h-full">
+                <span className="text-base font-bold text-blue-600 dark:text-blue-400 underline-offset-2 hover:underline">
+                  Voir nos avis Google
+                </span>
+              </div>
             </a>
           </div>
         </ScrollReveal>

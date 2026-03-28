@@ -16,7 +16,6 @@ import {
   Facebook,
   Instagram,
   Music2,
-  Star,
 } from "lucide-react";
 
 const Footer: React.FC = () => {
@@ -165,20 +164,23 @@ const Footer: React.FC = () => {
                 href="https://share.google/YzvsPqkbP6xX6bojc"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 bg-white/50 border border-gray-200 shadow-sm rounded-lg px-4 py-2.5 hover:shadow-md transition-all hover:bg-white"
+                className="flex items-center space-x-3 bg-white/70 border border-gray-200 shadow-sm rounded-xl px-4 py-3 hover:shadow-md transition-all hover:bg-white"
               >
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" 
                   alt="Google" 
-                  className="w-5 h-5 ml-1"
+                  className="w-8 h-8 ml-1"
                 />
-                <div className="flex flex-col text-left ml-2 border-l border-gray-300 pl-3">
-                  <span className="text-xs font-bold text-gray-900 leading-none mb-1">Note de 5.0/5 sur Google</span>
-                  <div className="flex space-x-0.5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3 h-3 text-yellow-500 fill-yellow-500" />
-                    ))}
-                  </div>
+                <div className="flex flex-col text-left ml-1">
+                  <span className="text-sm font-extrabold text-gray-900 leading-tight">⭐ 4,9/5 sur Google</span>
+                  <span className="text-xs font-medium text-gray-600 mt-0.5">
+                    +200 avis clients
+                  </span>
+                </div>
+                <div className="ml-2 border-l border-gray-300 pl-3 flex items-center h-full">
+                  <span className="text-xs font-bold text-blue-600 hover:underline">
+                    Voir nos avis Google
+                  </span>
                 </div>
               </a>
             </div>

@@ -11,6 +11,7 @@ import VirtualBusinessCard from "./VirtualBusinessCard";
 import Lock3DViewer from "./Lock3DViewer";
 import LockConfigurator from "./LockConfigurator";
 import UserJourneyGuide from "./UserJourneyGuide"; // 🧭 Guide virtuel
+import EmergencyCallButton from "./EmergencyCallButton";
 
 const Layout: React.FC = () => {
   const [leftOpen, setLeftOpen] = useState(true);
@@ -68,6 +69,8 @@ const Layout: React.FC = () => {
           {/* 🧭 Guide virtuel (bouton intégré dans le composant lui-même) */}
           <UserJourneyGuide autoStart={false} />
         </div>
+
+        <EmergencyCallButton />
 
         {/* ===== POPUP flottant (3D, carte, chatbot...) ===== */}
         {popupContent && (
