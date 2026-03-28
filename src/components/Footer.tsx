@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
       title: "Entreprise",
       links: [
         { label: "À propos", href: "/about" },
-        { label: "Avis Clients", href: "/avis-clients" },
+        { label: "Avis Clients", href: "https://share.google/YzvsPqkbP6xX6bojc" },
         { label: "Conseils", href: "/conseils" },
         { label: "Comparatif Serrures", href: "/comparatif-serrures" },
       ],
@@ -167,13 +167,13 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 bg-white/70 border border-gray-200 shadow-sm rounded-xl px-4 py-3 hover:shadow-md transition-all hover:bg-white"
               >
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" 
-                  alt="Google" 
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+                  alt="Google"
                   className="w-8 h-8 ml-1 flex-shrink-0"
                 />
                 <div className="flex flex-col text-left ml-1">
-                  <span className="text-sm font-extrabold text-gray-900 leading-tight">⭐ 4,9/5 sur Google</span>
+                  <span className="text-sm font-extrabold text-gray-900 leading-tight">⭐ 5/5 sur Google</span>
                   <div className="flex items-center space-x-1 mt-0.5">
                     <span className="text-xs font-medium text-gray-600">
                       +52 avis clients
@@ -222,7 +222,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-[#FF5B2E]" />
-                <span>Île-de-France</span>
+                <span>Essonne</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="w-4 h-4 text-[#FF5B2E]" />
@@ -258,12 +258,23 @@ const Footer: React.FC = () => {
                 <ul className="space-y-1.5">
                   {section.links.map((link, i) => (
                     <li key={i}>
-                      <Link
-                        to={link.href}
-                        className="hover:text-[#FF5B2E] transition"
-                      >
-                        {link.label}
-                      </Link>
+                      {link.href.startsWith("http") ? (
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-[#FF5B2E] transition"
+                        >
+                          {link.label}
+                        </a>
+                      ) : (
+                        <Link
+                          to={link.href}
+                          className="hover:text-[#FF5B2E] transition"
+                        >
+                          {link.label}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -289,6 +300,12 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-2.5">
+            <a
+              href="tel:+33783867650"
+              className="flex items-center justify-center bg-white text-[#FF5B2E] font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition"
+            >
+              <Phone className="w-4 h-4 mr-2" /> 07 83 86 76 50
+            </a>
             <a
               href="tel:+33185097365"
               className="flex items-center justify-center bg-white text-[#FF5B2E] font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition"

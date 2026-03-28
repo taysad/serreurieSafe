@@ -92,7 +92,7 @@ const InteractiveMap: React.FC = () => {
     },
     {
       id: "ste-genevieve",
-      name: "Ste-Geneviève",
+      name: "Sainte-Geneviève-des-Bois",
       areas: ["91700"],
       responseTime: "25-35 min",
       color: "#fed7aa",

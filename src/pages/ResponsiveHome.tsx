@@ -147,7 +147,7 @@ const ResponsiveHome: React.FC = () => {
                   className="w-10 h-10 flex-shrink-0"
                 />
                 <div className="flex flex-col text-left">
-                  <span className="text-sm sm:text-base font-extrabold text-gray-900 dark:text-white leading-tight">⭐ 4,9/5 sur Google</span>
+                  <span className="text-sm sm:text-base font-extrabold text-gray-900 dark:text-white leading-tight">⭐ 5/5 sur Google</span>
                   <div className="flex items-center space-x-1 mt-0.5">
                     <span className="text-xs sm:text-sm font-medium text-gray-500 dark:text-gray-400">
                       +52 avis clients

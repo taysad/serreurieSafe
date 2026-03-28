@@ -117,7 +117,7 @@ const ClientReviews: React.FC = () => {
                 className="w-12 h-12 flex-shrink-0"
               />
               <div className="flex flex-col text-left">
-                <span className="text-lg font-extrabold text-gray-900 dark:text-white leading-tight">⭐ 4,9/5 sur Google</span>
+                <span className="text-lg font-extrabold text-gray-900 dark:text-white leading-tight">⭐ 5/5 sur Google</span>
                 <div className="flex items-center space-x-1 mt-1">
                   <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
                     +52 avis clients
