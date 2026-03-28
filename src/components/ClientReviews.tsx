@@ -93,15 +93,42 @@ const ClientReviews: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <ScrollReveal>
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900 dark:text-white">
-            Ce que disent nos{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D72600] to-[#FF6B00]">
-              clients
-            </span>
-          </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-12">
-            Plus de 200 clients les satisfaits nous recommande 🔐
-          </p>
+          <div className="flex flex-col items-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900 dark:text-white text-center">
+              Ce que disent nos{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D72600] to-[#FF6B00]">
+                clients
+              </span>
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 text-center">
+              Plus de 200 clients satisfaits nous recommandent 🔐
+            </p>
+            
+            {/* Badge Google Trust */}
+            <a
+              href="https://share.google/YzvsPqkbP6xX6bojc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md rounded-full px-6 py-3 hover:shadow-lg transition-all hover:scale-105"
+            >
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" 
+                alt="Google" 
+                className="w-6 h-6"
+              />
+              <div className="flex flex-col text-left">
+                <span className="text-sm font-bold text-gray-900 dark:text-white leading-tight">Excellent 5.0/5 sur Google</span>
+                <div className="flex space-x-1 mt-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3 h-3 text-yellow-500 fill-yellow-500" />
+                  ))}
+                </div>
+              </div>
+              <span className="text-sm font-medium text-gray-500 dark:text-gray-400 ml-2 border-l border-gray-300 dark:border-gray-600 pl-3">
+                Voir notre fiche
+              </span>
+            </a>
+          </div>
         </ScrollReveal>
 
         {/* Avis principal */}

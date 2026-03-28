@@ -79,14 +79,14 @@ const ResponsiveHome: React.FC = () => {
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900 dark:text-white">
-              Serrurier Expert{" "}
+              Serrurier Safe{" "}
               <span className="block bg-gradient-to-r from-[#FF6B00] to-[#FF3C00] bg-clip-text text-transparent">
-                Île-de-France
+                Essonne
               </span>
             </h1>
 
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Intervention rapide 24h/24 pour tous vos besoins de serrurerie.
+              Intervention rapide 24h/24 - 7j/7 pour tous vos besoins de serrurerie.
               Expert certifié A2P avec plus de 15 ans d'expérience.
             </p>
 
@@ -97,6 +97,13 @@ const ResponsiveHome: React.FC = () => {
               >
                 <Phone className="w-5 h-5" />
                 <span>01 85 09 73 65</span>
+              </a>
+              <a
+                href="tel:+33783867650"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#FF6B00] to-[#FF3C00] text-white px-6 py-2.5 rounded-lg font-bold text-lg shadow hover:shadow-lg transition-all"
+              >
+                <Phone className="w-5 h-5" />
+                <span>07 83 86 76 50</span>
               </a>
               {/* 🔹 Nouveau bouton WhatsApp */}
               <a
@@ -123,6 +130,33 @@ const ResponsiveHome: React.FC = () => {
                 <span>Nos Services</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
+            </div>
+
+            {/* 🔹 Badge Google Trust */}
+            <div className="flex justify-center lg:justify-start pt-4">
+              <a
+                href="https://share.google/YzvsPqkbP6xX6bojc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200 dark:border-gray-700 shadow-sm rounded-full px-4 py-2 hover:shadow-md transition-all hover:scale-105"
+              >
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" 
+                  alt="Google" 
+                  className="w-5 h-5"
+                />
+                <div className="flex flex-col text-left">
+                  <span className="text-xs font-bold text-gray-900 dark:text-white leading-tight">Note de 5.0/5</span>
+                  <div className="flex space-x-0.5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-3 h-3 text-yellow-500 fill-yellow-500" />
+                    ))}
+                  </div>
+                </div>
+                <span className="text-xs font-medium text-gray-600 dark:text-gray-300 ml-2 border-l border-gray-300 dark:border-gray-600 pl-2">
+                  Avis vérifiés
+                </span>
+              </a>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6">
