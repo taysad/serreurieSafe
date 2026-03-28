@@ -137,7 +137,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                                 onChange={handleChange}
                                 required
                                 className="w-full pl-10 pr-4 py-3 text-sm sm:text-base border-2 border-primary-200 rounded-lg focus:border-secondary-500 focus:outline-none transition-colors"
-                                placeholder="01 85 09 73 65"
+                                placeholder="01 85 09 73 65 / 07 83 86 76 50"
                               />
                             </div>
                           </div>
@@ -241,7 +241,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
                       <div className="inline-flex items-center space-x-2 bg-secondary-50 px-4 py-2 rounded-lg">
                         <Phone className="w-5 h-5 text-secondary-600" />
                         <span className="text-sm sm:text-base font-semibold text-secondary-700">
-                          Ou appelez-nous : 01 85 09 73 65
+                          Ou appelez-nous : 01 85 09 73 65 / 07 83 86 76 50
                         </span>
                       </div>
                     </motion.div>

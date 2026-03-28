@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: "Téléphone",
-      details: "01 85 09 73 65",
+      details: "01 85 09 73 65 / 07 83 86 76 50",
       subtitle: "Disponible 24h/24 - 7j/7",
       action: "tel:+33185097365",
       image:
@@ -343,7 +343,7 @@ const Contact: React.FC = () => {
               href="tel:+33185097365"
               className="inline-block bg-white text-red-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition"
             >
-              01 85 09 73 65
+              01 85 09 73 65 / 07 83 86 76 50
             </a>
           </div>
         </motion.div>

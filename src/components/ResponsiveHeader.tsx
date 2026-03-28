@@ -173,7 +173,7 @@ const ResponsiveHeader: React.FC = () => {
                 onClick={playClickSound}
               >
                 <Phone className="w-4 h-4" />
-                <span>01 85 09 73 65</span>
+                <span>01 85 09 73 65 / 07 83 86 76 50</span>
               </a>
             </div>
 

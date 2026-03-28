@@ -337,7 +337,7 @@ const ResponsiveHome: React.FC = () => {
               className="inline-flex items-center justify-center gap-2 bg-white text-[#FF6B00] font-bold px-5 py-2.5 rounded-lg hover:scale-[1.05] transition-all shadow"
             >
               <Phone className="mr-2 w-5 h-5" />
-              01 85 09 73 65
+              01 85 09 73 65 / 07 83 86 76 50
             </a>
 
             <Link

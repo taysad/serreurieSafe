@@ -144,7 +144,7 @@ const FAQPage: React.FC = () => {
                                 className="bg-white text-orange-600 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all flex items-center justify-center space-x-2 shadow-lg"
                             >
                                 <Phone className="w-5 h-5" />
-                                <span>01 85 09 73 65</span>
+                                <span>01 85 09 73 65 / 07 83 86 76 50</span>
                             </MagneticButton>
                             <Link
                                 to="/contact"

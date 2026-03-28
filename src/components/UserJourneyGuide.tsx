@@ -99,7 +99,7 @@ const journeySteps: JourneyStep[] = [
       "Contactez un serrurier certifié A2P directement ou laissez un message.",
     icon: Phone,
     color: "bg-green-500",
-    actionLabel: "Appeler le 01 85 09 73 65",
+    actionLabel: "Appeler le 01 85 09 73 65 / 07 83 86 76 50",
     actionHref: "tel:+33185097365",
     actionType: "call",
     position: { bottom: "18%", right: "14%" },

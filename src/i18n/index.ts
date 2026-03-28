@@ -18,7 +18,7 @@ const resources = {
       'hero.title': 'Serrurier à Viry-Châtillon',
       'hero.subtitle': 'Le réflexe sécurité',
       'hero.description': 'Expert en serrurerie et sécurisation depuis 15 ans. Intervention rapide 24h/24 pour tous vos besoins de sécurité en Essonne et en Île-de-France.',
-      'hero.cta.call': '01 85 09 73 65',
+      'hero.cta.call': '01 85 09 73 65 / 07 83 86 76 50',
       'hero.cta.services': 'Nos Services',
       
       // Services
@@ -77,7 +77,7 @@ const resources = {
       'hero.title': 'Locksmith in Viry-Châtillon',
       'hero.subtitle': 'Your security reflex',
       'hero.description': 'Expert in locksmithing and security for 15 years. Fast 24/7 intervention for all your security needs in Viry-Châtillon and Île-de-France.',
-      'hero.cta.call': '01 85 09 73 65',
+      'hero.cta.call': '01 85 09 73 65 / 07 83 86 76 50',
       'hero.cta.services': 'Our Services',
       
       // Services

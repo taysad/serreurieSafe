@@ -409,7 +409,7 @@ const BlogPost: React.FC = () => {
                     href="tel:+33185097365"
                     className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105 inline-block"
                   >
-                    01 85 09 73 65
+                    01 85 09 73 65 / 07 83 86 76 50
                   </a>
                 </GlassCard>
               </motion.div>

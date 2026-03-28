@@ -51,7 +51,7 @@ const ThankYou: React.FC = () => {
                         <h3 className="font-bold mb-2">Urgence ?</h3>
                         <p className="text-sm text-gray-600 mb-4">Besoin d'aide immédiate ?</p>
                         <a href="tel:+33185097365" className="text-orange-600 font-bold hover:underline">
-                            01 85 09 73 65
+                            01 85 09 73 65 / 07 83 86 76 50
                         </a>
                     </GlassCard>
 

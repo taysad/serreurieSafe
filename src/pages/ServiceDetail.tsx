@@ -192,7 +192,7 @@ const ServiceDetail: React.FC = () => {
                   className="inline-flex items-center space-x-2 bg-orange-600 hover:bg-orange-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-200 hover:shadow-lg"
                 >
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                  <span>01 85 09 73 65</span>
+                  <span>01 85 09 73 65 / 07 83 86 76 50</span>
                 </MagneticButton>
                 <Link
                   to="/contact"
@@ -410,7 +410,7 @@ const ServiceDetail: React.FC = () => {
                 className="inline-flex items-center space-x-2 bg-white text-gray-900 px-6 sm:px-10 py-3 sm:py-4 rounded-lg font-bold text-lg sm:text-xl hover:bg-gray-100 transition-all duration-200 hover:shadow-lg"
               >
                 <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
-                <span>01 85 09 73 65</span>
+                <span>01 85 09 73 65 / 07 83 86 76 50</span>
               </MagneticButton>
               <Link
                 to="/contact"

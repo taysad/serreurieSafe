@@ -182,7 +182,7 @@ const Header: React.FC = () => {
                 className="flex items-center space-x-2 bg-orange-600 hover:bg-orange-700 text-white px-5 py-2 rounded-lg font-medium transition-all duration-200 hover:shadow-lg text-sm"
               >
                 <Phone className="w-4 h-4" />
-                <span>01 85 09 73 65</span>
+                <span>01 85 09 73 65 / 07 83 86 76 50</span>
               </MagneticButton>
             </div>
 

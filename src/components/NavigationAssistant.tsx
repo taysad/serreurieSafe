@@ -159,7 +159,7 @@ const NavigationAssistant: React.FC = () => {
       switch (type) {
         case "emergency":
           response =
-            "🚨 **Intervention d'urgence disponible 24h/24 !**\n\n• Temps d'intervention : < 30 minutes\n• Devis gratuit\n• Équipe mobile certifiée\n• Paiement sécurisé\n\nAppelez-nous immédiatement au **01 85 09 73 65**";
+            "🚨 **Intervention d'urgence disponible 24h/24 !**\n\n• Temps d'intervention : < 30 minutes\n• Devis gratuit\n• Équipe mobile certifiée\n• Paiement sécurisé\n\nAppelez-nous immédiatement au **01 85 09 73 65 / 07 83 86 76 50**";
           suggestions = [
             "Appeler maintenant",
             "Demander un devis",
@@ -194,7 +194,7 @@ const NavigationAssistant: React.FC = () => {
 
         case "appointment":
           response =
-            "📅 **Prendre rendez-vous :**\n\n• **Urgence** : Appelez le 01 85 09 73 65\n• **Programmé** : Formulaire en ligne\n• **Devis gratuit** : Sans engagement\n• **Disponibilité** : 7j/7, 24h/24";
+            "📅 **Prendre rendez-vous :**\n\n• **Urgence** : Appelez le 01 85 09 73 65 / 07 83 86 76 50\n• **Programmé** : Formulaire en ligne\n• **Devis gratuit** : Sans engagement\n• **Disponibilité** : 7j/7, 24h/24";
           suggestions = [
             "Appeler maintenant",
             "Formulaire RDV",

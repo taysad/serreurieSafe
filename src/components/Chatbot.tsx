@@ -65,8 +65,8 @@ const Chatbot: React.FC = () => {
         "Nous intervenons rapidement **dans toute la région parisienne**. Pouvez-vous préciser votre adresse ou arrondissement ?",
       ],
       contact: [
-        "📞 Vous pouvez nous joindre immédiatement au **01 85 09 73 65** ou via **WhatsApp**. Réponse garantie en moins de **5 minutes** !",
-        "☎️ Voici notre contact direct : **01 85 09 73 65**. Vous pouvez aussi m’envoyer un message WhatsApp pour être rappelé rapidement.",
+        "📞 Vous pouvez nous joindre immédiatement au **01 85 09 73 65 / 07 83 86 76 50** ou via **WhatsApp**. Réponse garantie en moins de **5 minutes** !",
+        "☎️ Voici notre contact direct : **01 85 09 73 65 / 07 83 86 76 50**. Vous pouvez aussi m’envoyer un message WhatsApp pour être rappelé rapidement.",
       ],
       sécurité: [
         "🛡️ Tous nos produits sont **certifiés A2P** et répondent aux normes européennes. Serrure Safe garantit la **qualité et la sécurité** de chaque installation.",
