@@ -331,18 +331,18 @@ const Footer: React.FC = () => {
         >
           <p>© {currentYear} Serrure Safe — Tous droits réservés.</p>
           <div className="flex flex-wrap justify-center gap-3">
-            <a href="#" className="hover:text-[#FF5B2E] transition">
+            <Link to="/mentions-legales" className="hover:text-[#FF5B2E] transition">
               Mentions légales
-            </a>
-            <a href="#" className="hover:text-[#FF5B2E] transition">
+            </Link>
+            <Link to="/confidentialite" className="hover:text-[#FF5B2E] transition">
               Confidentialité
-            </a>
-            <a href="#" className="hover:text-[#FF5B2E] transition">
+            </Link>
+            <Link to="/cgv" className="hover:text-[#FF5B2E] transition">
               CGV
-            </a>
-            <a href="#" className="hover:text-[#FF5B2E] transition">
+            </Link>
+            <Link to="/sitemap" className="hover:text-[#FF5B2E] transition">
               Plan du site
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

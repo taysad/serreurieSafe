@@ -14,7 +14,9 @@ const Contact = React.lazy(() => import("./pages/Contact"));
 const Blog = React.lazy(() => import("./pages/Blog"));
 const BlogPost = React.lazy(() => import("./pages/BlogPost"));
 const ResponsiveHome = React.lazy(() => import("./pages/ResponsiveHome"));
-const Legal = React.lazy(() => import("./pages/Legal"));
+const MentionsLegales = React.lazy(() => import("./pages/MentionsLegales"));
+const Confidentialite = React.lazy(() => import("./pages/Confidentialite"));
+const CGV = React.lazy(() => import("./pages/CGV"));
 const LocalPage = React.lazy(() => import("./pages/local/LocalPage"));
 const LandingPageCity = React.lazy(() => import("./pages/landing/LandingPageCity"));
 const Pricing = React.lazy(() => import("./pages/Pricing"));
@@ -102,7 +104,9 @@ function App() {
                 <Route path="blog/:slug" element={<BlogPost />} />
                 <Route path="thank-you" element={<ThankYou />} />
 
-                <Route path="legal" element={<Legal />} />
+                <Route path="mentions-legales" element={<MentionsLegales />} />
+                <Route path="confidentialite" element={<Confidentialite />} />
+                <Route path="cgv" element={<CGV />} />
                 <Route path="tarifs-serrurier-paris" element={<Pricing />} />
                 <Route path="serrurier-:slug" element={<LocalPage />} />
                 <Route path="landing/:city" element={<LandingPageCity />} />
