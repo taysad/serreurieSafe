@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 
 export const contactInfo = {
   name: "Serrurerie Safe",
@@ -23,11 +22,11 @@ export const socialLinks = {
 };
 
 export const defaultSEO = {
-  title: "Serrurier Viry-Châtillon & Essonne - Dépannage Urgence 24/7 | Serrurerie Safe",
-  titleTemplate: "%s | Serrurerie Safe",
-  description: "Serrurier Viry-Châtillon et Essonne (91) agréé assurances. Ouverture de porte, changement de serrure, blindage. Intervention en 30 min à Viry-Châtillon, Juvisy, Savigny et tout le 91. Disponible 24h/24.",
+  title: "Serrure Safe - Serrurier Essonne (91) et Alentours | Dépannage 24/7",
+  titleTemplate: "%s | Serrure Safe",
+  description: "Serrure Safe : Dépannage d'urgence 24/7 en Essonne (91) et alentours (Viry-Châtillon, Juvisy, Savigny, etc.). Ouverture de porte, changement de serrure. Devis gratuit.",
   url: "https://serrurerie-safe.fr",
-  siteName: "Serrurerie Safe",
+  siteName: "Serrure Safe",
   defaultImage: "https://serrurerie-safe.fr/default-og.jpg",
   locale: "fr_FR",
 };

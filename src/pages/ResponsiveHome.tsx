@@ -80,7 +80,7 @@ const ResponsiveHome: React.FC = () => {
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900 dark:text-white">
-              Serrurier Safe{" "}
+              Serrure Safe{" "}
               <span className="block bg-gradient-to-r from-[#FF6B00] to-[#FF3C00] bg-clip-text text-transparent">
                 Essonne
               </span>
@@ -141,9 +141,9 @@ const ResponsiveHome: React.FC = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 sm:space-x-4 bg-white/95 dark:bg-gray-800/95 backdrop-blur-md border border-gray-200 dark:border-gray-700 shadow-md rounded-2xl px-4 sm:px-5 py-3 hover:shadow-lg hover:border-blue-400 transition-all hover:scale-105"
               >
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" 
-                  alt="Google" 
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+                  alt="Google"
                   className="w-10 h-10 flex-shrink-0"
                 />
                 <div className="flex flex-col text-left">
