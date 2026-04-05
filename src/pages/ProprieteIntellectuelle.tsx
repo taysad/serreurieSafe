@@ -11,7 +11,11 @@ const ProprieteIntellectuelle: React.FC = () => {
             />
             <div className="bg-white py-16 px-4 sm:px-6 lg:px-8 mt-20">
                 <div className="max-w-3xl mx-auto prose prose-orange">
-                    <h1 className="text-3xl font-bold text-gray-900 mb-8">DROITS DE PROPRIÉTÉ INTELLECTUELLE</h1>
+                    <div className="mb-8">
+                        <span className="block text-sm font-semibold tracking-wider text-orange-600 uppercase mb-1">SERRURE SAFE</span>
+                        <span className="block text-base text-gray-600 mb-6 italic">Le réflexe sécurité</span>
+                        <h1 className="text-3xl font-bold text-gray-900">DROITS DE PROPRIÉTÉ INTELLECTUELLE</h1>
+                    </div>
                     <p className="text-sm text-gray-500 mb-8">
                         © 2026 SERRURE SAFE — Tous droits réservés<br />
                         Version en vigueur au 1er avril 2026<br />
