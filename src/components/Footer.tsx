@@ -340,6 +340,9 @@ const Footer: React.FC = () => {
             <Link to="/cgv" className="hover:text-[#FF5B2E] transition">
               CGV
             </Link>
+            <Link to="/propriete-intellectuelle" className="hover:text-[#FF5B2E] transition">
+              Propriété Intellectuelle
+            </Link>
             <Link to="/sitemap" className="hover:text-[#FF5B2E] transition">
               Plan du site
             </Link>
