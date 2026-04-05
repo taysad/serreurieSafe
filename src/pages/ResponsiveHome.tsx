@@ -86,10 +86,21 @@ const ResponsiveHome: React.FC = () => {
               </span>
             </h1>
 
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Intervention rapide 24h/24 - 7j/7 pour tous vos besoins de serrurerie.
-              Expert certifié A2P avec plus de 15 ans d'expérience.
-            </p>
+            <div className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-4">
+              <p className="font-semibold text-gray-900 dark:text-white">
+                Serrurier en Essonne – Chez vous en 30 minutes<br/>
+                <span className="font-normal text-gray-600 dark:text-gray-300">Ouverture de porte, dépannage urgent, changement de serrure.</span>
+              </p>
+              <ul className="space-y-2 text-base mx-auto lg:mx-0 w-fit text-left">
+                <li className="flex items-start gap-2"><span>🔑</span> <span>Intervention 24h/24 – 7j/7</span></li>
+                <li className="flex items-start gap-2"><span>🛡️</span> <span>Pose de serrures certifiées A2P</span></li>
+                <li className="flex items-start gap-2"><span>💰</span> <span>Prix annoncés à l’avance, sans mauvaise surprise</span></li>
+                <li className="flex items-start gap-2"><span>📍</span> <span>Artisan local basé à Viry-Châtillon</span></li>
+                <li className="flex items-start gap-2"><span>⭐</span> <span>5/5 sur Google – +52 avis clients vérifiés</span></li>
+                <li className="flex items-start gap-2"><span>🪟</span> <span>Vitrerie et rideaux roulants : on s’occupe aussi de ça.</span></li>
+                <li className="flex items-start gap-2 font-semibold text-[#FF6B00]"><span>📞</span> <span>Appelez maintenant – Un serrurier décroche 24h/24</span></li>
+              </ul>
+            </div>
 
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <a
